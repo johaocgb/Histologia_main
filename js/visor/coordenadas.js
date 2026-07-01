@@ -6,7 +6,7 @@
 // - Cuadrantes (zonas)
 // Copia automáticamente el HTML generado
 
-const MODO_COORDENADAS = false; // activar/desactivar herramienta
+const MODO_COORDENADAS = true; // activar/desactivar herramienta
 
 export function iniciarCoordenadas(visor, estado){
 

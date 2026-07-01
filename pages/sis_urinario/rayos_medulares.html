@@ -24,7 +24,7 @@
 <div class="container-fluid container-pag">
   
   <div class="text-center my-4">
-    <h2 class="fw-bold text-primary">Sistema Respiratorio</h2>
+    <h2 class="fw-bold text-primary">Sistema Urinario</h2>
   </div>
 
 <div class="row">
@@ -42,12 +42,12 @@
 
 <div id="panel-descripcion">
 
-<h3 class="title">Traquea</h3>
+<h3 class="title">Rayos Medulares</h3>
 
 <div class="text-content-area">
 
 <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="traquea4x">
+<div class="pagina active" data-level="4" data-id="rayos4x">
     <p><strong>AUMENTO 4X:</strong></p>
 <p>
 En traque a menor aumento se identifica: lumen, epitelio de revestimiento, mucosa, 
@@ -56,7 +56,7 @@ submucosa, glándulas, cartílago, adventicia y músculo traqueal.
 </div>
 
 <!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="traquea10x">
+<div class="pagina" data-level="10" data-id="rayos10x">
 <p><strong>AUMENTO 10X:</strong></p>
 <p>
 Se ve que tiene epitelio respiratorio, contiguo a este el tejido conectivo que también 
@@ -73,7 +73,7 @@ Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
 </p>
 </div>
 <!-- = PÁGINA 40X -->
-<div class="pagina" data-level="40" data-id="traquea40x1">
+<div class="pagina" data-level="40" data-id="rayos40x">
 <p><strong>AUMENTO 40X:</strong></p>
 <p>
 <strong>Túnica íntima:</strong>
@@ -171,75 +171,52 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="traquea4x" 
-        data-src="images/traqueaAHE13025_4X.jpeg" 
+        data-id="rayos4x" 
+        data-src="images/rayos_medulares/rayos4x.jpg" 
         data-inicial="true">
     </button>
 
     <!-- IMAGEN 10X -->
     <button class="thumb-btn" 
         data-level="10" 
-        data-id="traquea10x" 
-        data-src="images/traqueaAHE13025-2_10X.jpeg">
+        data-id="rayos10x" 
+        data-src="images/rayos_medulares/rayos10x.jpg">
     </button>
 
     <!-- IMÁGENES 40X -->
     <button class="thumb-btn" 
         data-level="40" 
-        data-id="traquea40x1" 
-        data-src="images/traqueaAHE13025-3_40X.jpeg">
+        data-id="rayos40x" 
+        data-src="images/rayos_medulares/rayos40x.jpg">
     </button>
 
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="traquea40x2" 
-        data-src="images/traqueaAHE13025-4_40X.jpeg">
-    </button>
-
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="arteria40x3" 
-        data-src="images/AHE13035-5C_40X.jpeg">
-    </button>
 </div>
 
 
 <!-- CONFIGURACIÓN VACÍA POR AHORA -->
 
 <!-- cuadrante 4x a 10x-->>
-<div id="config-cuadrantes" style="display:none;">
-  <div data-parent="4"
-data-parent-id="traquea4x"
-data-target="traquea10x"
+<div id="config-cuadrantes" style="display: none;">
+<div data-parent="4"
+data-parent-id="rayos4x"
+data-target="rayos10x"
 data-target-level="10"
 data-label="10X"
-data-x="0.4112"
-data-y="0.1638"
-data-w="0.3962"
-data-h="0.2250">
+data-x="0.2999"
+data-y="0.1276"
+data-w="0.3982"
+data-h="0.2226">
 </div>
-
 <!-- cuadrante 10x a 40x-->
 <div data-parent="10"
-data-parent-id="traquea10x"
-data-target="traquea40x1"
+data-parent-id="rayos10x"
+data-target="rayos40x"
 data-target-level="40"
 data-label="40X"
-data-x="0.1591"
-data-y="0.3038"
-data-w="0.2552"
-data-h="0.1364">
-</div>
-
-<div data-parent="10"
-data-parent-id="traquea10x"
-data-target="traquea40x2"
-data-target-level="40"
-data-label="40X"
-data-x="0.2817"
-data-y="0.2858"
-data-w="0.2605"
-data-h="0.1444">
+data-x="0.3343"
+data-y="0.1826"
+data-w="0.2519"
+data-h="0.1354">
 </div>
 
 </div>

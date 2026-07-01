@@ -24,7 +24,7 @@
 <div class="container-fluid container-pag">
   
   <div class="text-center my-4">
-    <h2 class="fw-bold text-primary">Sistema Respiratorio</h2>
+    <h2 class="fw-bold text-primary">Sistema Urinario</h2>
   </div>
 
 <div class="row">
@@ -42,34 +42,27 @@
 
 <div id="panel-descripcion">
 
-<h3 class="title">Traquea</h3>
+<h3 class="title">Corteza</h3>
 
 <div class="text-content-area">
 
 <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="traquea4x">
+<div class="pagina active" data-level="4" data-id="corteza4x">
     <p><strong>AUMENTO 4X:</strong></p>
 <p>
-En traque a menor aumento se identifica: lumen, epitelio de revestimiento, mucosa, 
-submucosa, glándulas, cartílago, adventicia y músculo traqueal.  
+El tejido corresponde a riñón y a este se asocia la cápsula renal, corteza renal y médula renal.   
 </p>
 </div>
 
 <!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="traquea10x">
+<div class="pagina" data-level="10" data-id="corteza10x">
 <p><strong>AUMENTO 10X:</strong></p>
 <p>
-Se ve que tiene epitelio respiratorio, contiguo a este el tejido conectivo que también 
-conforma mucosa, luego esta la su mucosa, glándulas mucosas y cartílago hialino, 
-adventicia con tejido conectivo laxo, músculo traqueal con fibras musculares lisas 
-</p>
-<p>
-<strong>(TM) Túnica media:</strong>
-Fibras de músculo liso.
-</p>
-<p>
-<strong>(TA) Túnica adventicia:</strong>
-Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
+La cápsula renal se identifica con tejido conectivo, seguido a esta se cimentará la corteza, 
+capa más extensa, la cual se compone por la nefrona (corpúsculos renales, una serie de 
+tubulos y vasos sanguíneos). Por último, está la capa más interna que corresponde a la 
+médula, las células de esta zona son más pálidas, hay vasos sanguíneos, conductos colectores 
+y se forma la papila (la cual no se identifica).  
 </p>
 </div>
 <!-- = PÁGINA 40X -->
@@ -171,76 +164,44 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="traquea4x" 
-        data-src="images/traqueaAHE13025_4X.jpeg" 
+        data-id="corteza4x" 
+        data-src="images/corteza/corteza4x.jpg" 
         data-inicial="true">
     </button>
 
     <!-- IMAGEN 10X -->
     <button class="thumb-btn" 
         data-level="10" 
-        data-id="traquea10x" 
-        data-src="images/traqueaAHE13025-2_10X.jpeg">
+        data-id="corteza10x" 
+        data-src="images/corteza/corteza10x.jpg">
     </button>
 
     <!-- IMÁGENES 40X -->
     <button class="thumb-btn" 
         data-level="40" 
-        data-id="traquea40x1" 
-        data-src="images/traqueaAHE13025-3_40X.jpeg">
+        data-id="corteza40x" 
+        data-src="images/corteza/corteza40x.jpg">
     </button>
 
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="traquea40x2" 
-        data-src="images/traqueaAHE13025-4_40X.jpeg">
-    </button>
-
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="arteria40x3" 
-        data-src="images/AHE13035-5C_40X.jpeg">
-    </button>
 </div>
 
 
 <!-- CONFIGURACIÓN VACÍA POR AHORA -->
 
 <!-- cuadrante 4x a 10x-->>
-<div id="config-cuadrantes" style="display:none;">
-  <div data-parent="4"
-data-parent-id="traquea4x"
-data-target="traquea10x"
+<div id="config-cuadrantes" style="display: none;">
+<div data-parent="4"
+data-parent-id="corteza4x"
+data-target="corteza10x"
 data-target-level="10"
 data-label="10X"
-data-x="0.4112"
-data-y="0.1638"
-data-w="0.3962"
-data-h="0.2250">
+data-x="0.3411"
+data-y="0.127"
+data-w="0.3509"
+data-h="0.2266">
 </div>
-
 <!-- cuadrante 10x a 40x-->
-<div data-parent="10"
-data-parent-id="traquea10x"
-data-target="traquea40x1"
-data-target-level="40"
-data-label="40X"
-data-x="0.1591"
-data-y="0.3038"
-data-w="0.2552"
-data-h="0.1364">
-</div>
 
-<div data-parent="10"
-data-parent-id="traquea10x"
-data-target="traquea40x2"
-data-target-level="40"
-data-label="40X"
-data-x="0.2817"
-data-y="0.2858"
-data-w="0.2605"
-data-h="0.1444">
-</div>
 
 </div>
 
