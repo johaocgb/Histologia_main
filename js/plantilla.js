@@ -5,7 +5,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Cargar HEADER
-    fetch("../../../../plantillas/header.html")
+    fetch("../../../../../plantillas/header.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("afterbegin", data);
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error cargando header:", error));
 
     // Cargar FOOTER
-    fetch("../../../../plantillas/footer.html")
+    fetch("../../../../../plantillas/footer.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("beforeend", data);
