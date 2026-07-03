@@ -178,8 +178,8 @@ Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="traquea" 
-        data-src="img/traquea/foco1/E14-O25_4X.jpg" 
+        data-id="traquea4x" 
+        data-src="../img/traquea/foco1/E14-O25_4X.jpg" 
         data-inicial="true">
     </button>
 
@@ -187,32 +187,32 @@ Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
     <button class="thumb-btn" 
         data-level="10" 
         data-id="traquea10X" 
-        data-src="img/traquea/foco1/E14-O25_10X.jpg">
+        data-src="../img/traquea/foco1/E14-O25_10X.jpg">
     </button>
 
     <button class="thumb-btn" 
         data-level="10" 
         data-id="traquea10X2" 
-        data-src="img/traquea/foco1/E14-O25_10X2.jpg">
+        data-src="../img/traquea/foco1/E14-O25_10X2.jpg">
     </button>
 
     <!-- IMÁGENES 40X -->
      <button class="thumb-btn" 
         data-level="40" 
         data-id="traquea40X" 
-        data-src="img/traquea/foco1/E14-O25_40X.jpg">
+        data-src="../img/traquea/foco1/E14-O25_40X.jpg">
     </button>
 
     <button class="thumb-btn" 
         data-level="40" 
         data-id="traquea40X2" 
-        data-src="img/traquea/foco1/E14-O25_40X2.jpg">
+        data-src="../img/traquea/foco1/E14-O25_40X2.jpg">
     </button>
 
     <button class="thumb-btn" 
         data-level="40" 
         data-id="traquea40X3" 
-        data-src="img/traquea/foco1/E14-O25_40X3.jpg">
+        data-src="../img/traquea/foco1/E14-O25_40X3.jpg">
     </button>
 
 </div>
@@ -260,12 +260,64 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     data-label        → texto mostrado en hover = 4X, 10X o 40X
     --> 
 <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+<div data-parent="4"
+data-parent-id="traquea4x"
+data-target="traquea10X"
+data-target-level="10"
+data-label="10X"
+data-x="0.0617"
+data-y="0.1689"
+data-w="0.3807"
+data-h="0.2268">
+</div>
 
+<div data-parent="4"
+data-parent-id="traquea4x"
+data-target="traquea10X2"
+data-target-level="10"
+data-label="10X2"
+data-x="0.433"
+data-y="0.1661"
+data-w="0.3972"
+data-h="0.2358">
+</div>
 
 
 
 <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
 
+<div data-parent="10"
+data-parent-id="traquea10X"
+data-target="traquea40X"
+data-target-level="40"
+data-label="40X"
+data-x="0.3749"
+data-y="0.2018"
+data-w="0.2604"
+data-h="0.1510">
+</div>
+
+<div data-parent="10"
+data-parent-id="traquea10X2"
+data-target="traquea40X2"
+data-target-level="40"
+data-label="40X"
+data-x="0.3118"
+data-y="0.2813"
+data-w="0.2438"
+data-h="0.1344">
+</div>
+
+<div data-parent="10"
+data-parent-id="traquea10X"
+data-target="traquea40X3"
+data-target-level="40"
+data-label="40X2"
+data-x="0.0134"
+data-y="0.3693"
+data-w="0.2046"
+data-h="0.1132">
+</div>
 
 
     <!-- ==============================
