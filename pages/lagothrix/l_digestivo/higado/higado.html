@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histología - Arteria</title>
+<!-- ==============================
+     LIBRERÍAS EXTERNAS
+============================== -->
+
+<!-- Bootstrap (layout y componentes) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Iconos -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- ==============================
+     ESTILOS PROPIOS
+============================== -->
+<link rel="stylesheet" href="../../../../css/estiloGeneral.css"/><!-- estilos globales -->
+<link rel="stylesheet" href="../../../../css/estiloVisor.css"/> <!-- visor -->
+<link rel="stylesheet" href="../../../../css/estiloPanel.css"/><!-- panel lateral -->
+
+
+</head>
+<body>
+
+<!-- Header dinámico (cargado por JS) -->
+<div id="header-container"></div>
+<!-- ==============================
+     CONTENEDOR PRINCIPAL
+============================== -->
+<div class="container-fluid container-pag">
+
+<div class="text-center my-4">
+<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema digestivo - Higado</h2>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+
+<div class="image-container">
+
+<div id="viewer">
+   <!-- VISOR (OpenSeadragon)-->
+<!-- Aquí se renderiza la imagen -->
+
+<div id="viewer-main"></div>
+
+<!-- PANEL DESCRIPCIÓN ---------------------------------------------->
+
+<div id="panel-descripcion">
+
+<h3 class="title">Higado</h3>
+
+<div class="text-content-area">
+
+<!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
+<div class="pagina active" data-level="4" data-id="lengua4x">
+    <p><strong>AUMENTO 4X:</strong></p>
+<p>
+El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos 
+en la luz y la pared del vaso conformado por: 
+</p>
+<ul>
+  <li><strong>TI:</strong> Túnica íntima</li>
+  <li><strong>TM:</strong> Túnica media</li>
+  <li><strong>TA:</strong> Túnica adventicia</li>
+</ul>
+</div>
+
+<!-- = PÁGINA 10X -->
+<div class="pagina" data-level="10" data-id="lengua10x">
+<p><strong>AUMENTO 10X:</strong></p>
+<p>
+<strong>Túnica íntima:</strong>
+(E) Endotelio, (TC) tejido conectivo subendotelial y (ME) lámina elástica.
+</p>
+<p>
+<strong>(TM) Túnica media:</strong>
+Fibras de músculo liso.
+</p>
+<p>
+<strong>(TA) Túnica adventicia:</strong>
+Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
+</p>
+</div>
+<!-- = PÁGINA 40X -->
+<div class="pagina" data-level="40" data-id="lengua40x">
+<p><strong>AUMENTO 40X:</strong></p>
+<p>
+<strong>Túnica íntima:</strong>
+(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
+<br>
+Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
+</p>
+
+<div class="pagina" data-level="40" data-id="lengua40x3">
+<p><strong>AUMENTO 40X:</strong></p>
+<p>
+<strong>Túnica media:</strong>
+(CM) Células de músculo liso fusiformes con citoplasma no estriado.
+<br>
+Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
+</p>
+</div>
+</div>
+</div>
+<!-- ==============================
+     TOOLBAR (CONTROLES DEL VISOR)
+============================== -->
+<div id="visor-toolbar" class="visor-toolbar">
+
+    <!-- IZQUIERDA: navegación básica -->
+    <div class="toolbar-left">
+
+        <!-- Ir a imagen inicial -->
+        <button id="btn-home" class="btn-control">
+            <i class="bi bi-house"></i>
+        </button>
+
+        <!-- Volver a la anterior (historial) -->
+        <button id="btn-back" class="btn-control">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <!-- Salir de pantalla completa -->
+        <button id="btn-exit" class="btn-control">
+            <i class="bi bi-x-circle"></i>
+        </button>
+
+    </div>
+
+    <!-- CENTRO: controles del visor -->
+    <div class="toolbar-center">
+
+        <!-- Zoom out -->
+        <button id="zoom-out" class="btn-control">
+            <i class="bi bi-zoom-out"></i>
+        </button>
+
+        <!-- Zoom in -->
+        <button id="zoom-in" class="btn-control">
+            <i class="bi bi-zoom-in"></i>
+        </button>
+
+        <!-- Ajustar imagen a pantalla -->
+        <button id="fit-btn" class="btn-control">
+            <i class="bi bi-aspect-ratio"></i>
+        </button>
+
+        <!-- Activar/desactivar fullscreen -->
+        <button id="fullscreen-btn" class="btn-control">
+            <i class="bi bi-fullscreen"></i>
+        </button>
+
+        <!-- Mostrar/ocultar etiquetas -->
+        <button id="toggle-labels" class="btn-control">
+            <i class="bi bi-tag"></i>
+        </button>
+
+        <!-- Mostrar/ocultar panel lateral -->
+        <button id="btn-panel" class="btn-control">
+            <i class="bi bi-layout-sidebar"></i>
+        </button>
+    </div>
+</div>
+   <!-- ==============================
+    IMÁGENES
+============================== -->
+<!-- Funciona como fuente de datos para JS (crearEstructura).
+-->
+<div style="display:none;">
+
+    <!-- IMAGEN INICIAL (4X) -->
+    <!-- data-inicial="true" define la imagen que se carga al inicio -->
+    <button class="thumb-btn" 
+        data-level="4" 
+        data-id="higado" 
+        data-src="img/higado/foco1/E14-O21_4X.jpeg" 
+        data-inicial="true">
+    </button>
+
+    <!-- IMAGEN 10X -->
+    <button class="thumb-btn" 
+        data-level="10" 
+        data-id="higado10x" 
+        data-src="img/higado/foco1/E14-O21_10X.jpeg">
+    </button>
+    <button class="thumb-btn" 
+        data-level="10" 
+        data-id="higado10x2" 
+        data-src="img/higado/foco1/E14-O21_10X_2.jpeg">
+    </button>
+
+    <button class="thumb-btn" 
+        data-level="10" 
+        data-id="higado10x3" 
+        data-src="img/higado/foco1/E14-O21_10X_3.jpeg">
+    </button>
+
+    <!-- IMÁGENES 40X -->
+    <button class="thumb-btn" 
+        data-level="40" 
+        data-id="higado40x" 
+        data-src="img/higado/foco1/E14-O21_40X.jpeg">
+    </button>
+
+    <button class="thumb-btn" 
+        data-level="40" 
+        data-id="higado40x2" 
+        data-src="img/higado/foco1/E14-O21_40X_2.jpeg">
+    </button>
+    <button class="thumb-btn" 
+        data-level="40" 
+        data-id="higado40x2(2)" 
+        data-src="img/higado/foco1/E14-O21_40X_2(2).jpeg">
+    </button>
+
+    <button class="thumb-btn" 
+        data-level="40" 
+        data-id="higado40x3" 
+        data-src="img/higado/foco1/E14-O21_40X_3.jpeg">
+    </button>
+
+    <button class="thumb-btn" 
+        data-level="40" 
+        data-id="higado40x3(2)" 
+        data-src="img/higado/foco1/E14-O21_40X_3(2).jpeg">
+    </button>
+
+
+</div>
+<!-- ==============================
+    ETIQUETAS
+============================== -->
+
+    <!-- EJEMPLO (4X) -->
+    <!-- 
+    data-level → nivel de imagen QUE PUEDE SER 4, 10 o 40
+    data-id    → NOMBRE DE LA IMAGEN A LA QUE SE ASOCIA (data-id de los botones anteriores)
+    data-x/y   → coordenadas
+    data-label → texto mostrado EN LA ETIQUETA
+    -->
+<div id="config-etiquetas" style="display:none;">
+
+    <div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.2756"
+data-y="0.3107"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.2292"
+data-y="0.3219"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.2443"
+data-y="0.2904"
+data-label="CB">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.3308"
+data-y="0.3137"
+data-label="HA">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.3479"
+data-y="0.327"
+data-label="CB">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.4684"
+data-y="0.404"
+data-label="VC">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.666"
+data-y="0.4198"
+data-label="HA">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.6458"
+data-y="0.445"
+data-label="CB">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.7027"
+data-y="0.4103"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="higado"
+data-x="0.9154"
+data-y="0.392"
+data-label="CA">
+</div>
+
+<!-- ETIQUETAS en 10X -->
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x"
+data-x="0.3397"
+data-y="0.4485"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x"
+data-x="0.5422"
+data-y="0.5159"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x"
+data-x="0.8665"
+data-y="0.4059"
+data-label="CA">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x"
+data-x="0.4587"
+data-y="0.4021"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x"
+data-x="0.5686"
+data-y="0.1923"
+data-label="*">
+</div>
+
+<!-- ETIQUETAS en 10X2 -->
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x2"
+data-x="0.4071"
+data-y="0.2931"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x2"
+data-x="0.5256"
+data-y="0.2683"
+data-label="HA">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x2"
+data-x="0.5623"
+data-y="0.2847"
+data-label="Cb">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x2"
+data-x="0.3931"
+data-y="0.1332"
+data-label="*">
+</div>
+
+<!-- ETIQUETAS en 10X3 -->
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.0353"
+data-y="0.0735"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.1482"
+data-y="0.0535"
+data-label="HA">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.1912"
+data-y="0.0876"
+data-label="Cb">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.2126"
+data-y="0.0339"
+data-label="Tc">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.4866"
+data-y="0.2833"
+data-label="VC">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.4588"
+data-y="0.306"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.4816"
+data-y="0.2543"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.5277"
+data-y="0.265"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.6463"
+data-y="0.1779"
+data-label="Ch">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.6748"
+data-y="0.2467"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.9424"
+data-y="0.3944"
+data-label="Ch">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="higado10x3"
+data-x="0.9885"
+data-y="0.3357"
+data-label="HA">
+</div>
+
+<!-- ETIQUETAS en 40 -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x"
+data-x="0.8494"
+data-y="0.338"
+data-label="CA">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x"
+data-x="0.4956"
+data-y="0.1595"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x"
+data-x="0.4443"
+data-y="0.4193"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x"
+data-x="0.2031"
+data-y="0.0978"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x"
+data-x="0.0966"
+data-y="0.4073"
+data-label="===>">
+</div>
+
+<!-- ETIQUETAS en 40X2 -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.0785"
+data-y="0.2306"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.3598"
+data-y="0.2146"
+data-label="HA">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.4179"
+data-y="0.4381"
+data-label="TC">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.5233"
+data-y="0.3547"
+data-label="Cb">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.5889"
+data-y="0.087"
+data-label="Ch">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2"
+data-x="0.9046"
+data-y="0.3137"
+data-label="*">
+</div>
+<!-- ETIQUETAS en 40X2(2) -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2(2)"
+data-x="0.0801"
+data-y="0.3139"
+data-label="VP">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2(2)"
+data-x="0.2869"
+data-y="0.1641"
+data-label="Cb">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2(2)"
+data-x="0.247"
+data-y="0.3438"
+data-label="TC">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x2(2)"
+data-x="0.5898"
+data-y="0.328"
+data-label="VP">
+</div>
+
+
+<!-- ETIQUETAS en 40X3 -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3"
+data-x="0.4631"
+data-y="0.2963"
+data-label="VC">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3"
+data-x="0.3754"
+data-y="0.4149"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3"
+data-x="0.395"
+data-y="0.18"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3"
+data-x="0.5876"
+data-y="0.2204"
+data-label="*">
+</div>
+
+<!-- ETIQUETAS en 40X3(2) -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3(2)"
+data-x="0.2308"
+data-y="0.4245"
+data-label="TEXTO_ETIQUETA">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3(2)"
+data-x="0.2719"
+data-y="0.1162"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3(2)"
+data-x="0.5273"
+data-y="0.2068"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="higado40x3(2)"
+data-x="0.6296"
+data-y="0.4215"
+data-label="*">
+</div>
+
+
+
+<!-- ==============================
+    CUADRANTES (ENLACES ENTRE NIVELES)
+============================== -->
+<!-- 
+Bloque que define áreas clicables.
+Permiten navegar entre imágenes (niveles 4, 10, 40).
+-->
+<div id="config-cuadrantes" style="display:none;">
+      <!-- EJEMPLO: de 4X → 10X -->
+    <!-- 
+    data-parent       → nivel actual= (4, 10 o 40)
+    data-parent-id    → imagen origen (data-id de los botones anteriores)
+    data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
+    data-target-level → nivel destino (4, 10 o 40)
+    data-x/y          → posición (inicio)
+    data-w/h          → tamaño (ancho/alto)
+    data-label        → texto mostrado en hover = 4X, 10X o 40X
+    --> 
+<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+
+<div data-parent="4"
+data-parent-id="higado"
+data-target="higado10x"
+data-target-level="10"
+data-label="10X"
+data-x="0.6277"
+data-y="0.068"
+data-w="0.3592"
+data-h="0.2134">
+</div>
+
+ <div data-parent="4"
+data-parent-id="higado"
+data-target="higado10x2"
+data-target-level="10"
+data-label="10X2"
+data-x="0.1863"
+data-y="0.2425"
+data-w="0.3304"
+data-h="0.2025">
+</div>
+
+
+
+<div data-parent="4"
+data-parent-id="higado"
+data-target="higado10x3"
+data-target-level="10"
+data-label="10X"
+data-x="0.2756"
+data-y="0.3027"
+data-w="0.3991"
+data-h="0.1739">
+</div>
+
+
+
+<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+<div data-parent="10"
+data-parent-id="higado10x"
+data-target="higado40x"
+data-target-level="40"
+data-label=""
+data-x="0.6985"
+data-y="0.1639"
+data-w="0.2557"
+data-h="0.2544">
+</div>
+
+<div data-parent="10"
+data-parent-id="higado10x2"
+data-target="higado40x2"
+data-target-level="40"
+data-label=""
+data-x="0.4323"
+data-y="0.2285"
+data-w="0.2307"
+data-h="0.1227">
+</div>
+
+<div data-parent="10"
+data-parent-id="higado10x2"
+data-target="higado40x2(2)"
+data-target-level="40"
+data-label=""
+data-x="0.1993"
+data-y="0.165"
+data-w="0.2716"
+data-h="0.1371">
+</div>
+
+<div data-parent="10"
+data-parent-id="higado10x2"
+data-target="higado40x3(2)"
+data-target-level="40"
+data-label="40X"
+data-x="0.6066"
+data-y="0.3726"
+data-w="0.2938"
+data-h="0.1595">
+</div>
+
+<div data-parent="10"
+data-parent-id="higado10x3"
+data-target="higado40x3"
+data-target-level="40"
+data-label="40X"
+data-x="0.4006"
+data-y="0.2258"
+data-w="0.2396"
+data-h="0.1434">
+</div>
+
+<!-- ==============================
+     FOOTER DINÁMICO
+============================== -->
+<!-- Se carga contenido común (footer) mediante JS -->
+<div id="footer-container"></div>
+
+<!-- ==============================
+     SCRIPTS
+============================== -->
+
+<!-- Plantilla: carga header/footer dinámicos -->
+<script src="../../../../js/plantilla.js"></script>
+
+<!-- Bootstrap JS (componentes interactivos) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- OpenSeadragon (motor del visor) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+
+<!-- Script principal PARA EL VISOR DE IMÁGENES -->
+<script type="module" src="../../../../js/main.js"></script>
+    
+</body>
+</html>
