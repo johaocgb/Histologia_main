@@ -1,603 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histología - Arteria</title>
-<!-- ==============================
+    <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
 
-<!-- Bootstrap (layout y componentes) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<!-- Iconos -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<!-- ==============================
+    <!-- Bootstrap (layout y componentes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- ==============================
      ESTILOS PROPIOS
 ============================== -->
-<link rel="stylesheet" href="../../../../../css/estiloGeneral.css"/><!-- estilos globales -->
-<link rel="stylesheet" href="../../../../../css/estiloVisor.css"/> <!-- visor -->
-<link rel="stylesheet" href="../../../../../css/estiloPanel.css"/><!-- panel lateral -->
+    <link rel="stylesheet" href="../../../../../css/estiloGeneral.css" /><!-- estilos globales -->
+    <link rel="stylesheet" href="../../../../../css/estiloVisor.css" /> <!-- visor -->
+    <link rel="stylesheet" href="../../../../../css/estiloPanel.css" /><!-- panel lateral -->
 
 
 </head>
+
 <body>
 
-<!-- Header dinámico (cargado por JS) -->
-<div id="header-container"></div>
-<!-- ==============================
+    <!-- Header dinámico (cargado por JS) -->
+    <div id="header-container"></div>
+    <!-- ==============================
      CONTENEDOR PRINCIPAL
 ============================== -->
-<div class="container-fluid container-pag">
+    <div class="container-fluid container-pag">
 
-<div class="text-center my-4">
-<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Digestivo - Glandula Salival Serosa</h2>
-</div>
+        <div class="text-center my-4">
+            <h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Digestivo - Glandula Salival Serosa</h2>
+        </div>
 
-<div class="row">
-<div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-12">
 
-<div class="image-container">
+                <div class="image-container">
 
-<div id="viewer">
-   <!-- VISOR (OpenSeadragon)-->
-<!-- Aquí se renderiza la imagen -->
+                    <div id="viewer">
+                        <!-- VISOR (OpenSeadragon)-->
+                        <!-- Aquí se renderiza la imagen -->
 
-<div id="viewer-main"></div>
+                        <div id="viewer-main"></div>
 
-<!-- PANEL DESCRIPCIÓN ---------------------------------------------->
+                        <!-- PANEL DESCRIPCIÓN ---------------------------------------------->
 
-<div id="panel-descripcion">
+                        <div id="panel-descripcion">
 
-<h3 class="title">Serosa</h3>
+                            <h3 class="title">Serosa</h3>
 
-<div class="text-content-area">
+                            <div class="text-content-area">
 
-<!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="lengua4x">
-    <p><strong>AUMENTO 4X:</strong></p>
-<p>
-El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos 
-en la luz y la pared del vaso conformado por: 
-</p>
-<ul>
-  <li><strong>TI:</strong> Túnica íntima</li>
-  <li><strong>TM:</strong> Túnica media</li>
-  <li><strong>TA:</strong> Túnica adventicia</li>
-</ul>
-</div>
+                                <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
+                                <div class="pagina active" data-level="4" data-id="serosa4x">
+                                    <p><strong>AUMENTO 4X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                    <!-- <ul>
+                                        <li><strong>TI:</strong> Túnica íntima</li>
+                                        <li><strong>TM:</strong> Túnica media</li>
+                                        <li><strong>TA:</strong> Túnica adventicia</li>
+                                    </ul> -->
+                                </div>
 
-<!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="mucosa10x">
-<p><strong>AUMENTO 10X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio, (TC) tejido conectivo subendotelial y (ME) lámina elástica.
-</p>
-<p>
-<strong>(TM) Túnica media:</strong>
-Fibras de músculo liso.
-</p>
-<p>
-<strong>(TA) Túnica adventicia:</strong>
-Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
-</p>
-</div>
+                                <!-- = PÁGINA 10X -->
+                                <div class="pagina" data-level="10" data-id="serosa10X">
+                                    <p><strong>AUMENTO 10X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
 
 
-<div class="pagina" data-level="40" data-id="mucosa10x2">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica media:</strong>
-(CM) Células de músculo liso fusiformes con citoplasma no estriado.
-<br>
-Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
-</p>
-</div>
+                                <div class="pagina" data-level="40" data-id="serosa40X">
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
 
-<!-- = PÁGINA 40X -->
+                                <!-- = PÁGINA 40X -->
 
-<div class="pagina" data-level="40" data-id="mucosa40x">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
-<br>
-Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
-</p>
-</div>
-</div>
+                                <div class="pagina" data-level="40" data-id="serosa40X2">
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
+                            </div>
 
-<!-- ==============================
+                            <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
-<div id="visor-toolbar" class="visor-toolbar">
+                            <div id="visor-toolbar" class="visor-toolbar">
 
-    <!-- IZQUIERDA: navegación básica -->
-    <div class="toolbar-left">
+                                <!-- IZQUIERDA: navegación básica -->
+                                <div class="toolbar-left">
 
-        <!-- Ir a imagen inicial -->
-        <button id="btn-home" class="btn-control">
-            <i class="bi bi-house"></i>
-        </button>
+                                    <!-- Ir a imagen inicial -->
+                                    <button id="btn-home" class="btn-control">
+                                        <i class="bi bi-house"></i>
+                                    </button>
 
-        <!-- Volver a la anterior (historial) -->
-        <button id="btn-back" class="btn-control">
-            <i class="bi bi-arrow-left"></i>
-        </button>
+                                    <!-- Volver a la anterior (historial) -->
+                                    <button id="btn-back" class="btn-control">
+                                        <i class="bi bi-arrow-left"></i>
+                                    </button>
 
-        <!-- Salir de pantalla completa -->
-        <button id="btn-exit" class="btn-control">
-            <i class="bi bi-x-circle"></i>
-        </button>
+                                    <!-- Salir de pantalla completa -->
+                                    <button id="btn-exit" class="btn-control">
+                                        <i class="bi bi-x-circle"></i>
+                                    </button>
 
-    </div>
+                                </div>
 
-    <!-- CENTRO: controles del visor -->
-    <div class="toolbar-center">
+                                <!-- CENTRO: controles del visor -->
+                                <div class="toolbar-center">
 
-        <!-- Zoom out -->
-        <button id="zoom-out" class="btn-control">
-            <i class="bi bi-zoom-out"></i>
-        </button>
+                                    <!-- Zoom out -->
+                                    <button id="zoom-out" class="btn-control">
+                                        <i class="bi bi-zoom-out"></i>
+                                    </button>
 
-        <!-- Zoom in -->
-        <button id="zoom-in" class="btn-control">
-            <i class="bi bi-zoom-in"></i>
-        </button>
+                                    <!-- Zoom in -->
+                                    <button id="zoom-in" class="btn-control">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </button>
 
-        <!-- Ajustar imagen a pantalla -->
-        <button id="fit-btn" class="btn-control">
-            <i class="bi bi-aspect-ratio"></i>
-        </button>
+                                    <!-- Ajustar imagen a pantalla -->
+                                    <button id="fit-btn" class="btn-control">
+                                        <i class="bi bi-aspect-ratio"></i>
+                                    </button>
 
-        <!-- Activar/desactivar fullscreen -->
-        <button id="fullscreen-btn" class="btn-control">
-            <i class="bi bi-fullscreen"></i>
-        </button>
+                                    <!-- Activar/desactivar fullscreen -->
+                                    <button id="fullscreen-btn" class="btn-control">
+                                        <i class="bi bi-fullscreen"></i>
+                                    </button>
 
-        <!-- Mostrar/ocultar etiquetas -->
-        <button id="toggle-labels" class="btn-control">
-            <i class="bi bi-tag"></i>
-        </button>
+                                    <!-- Mostrar/ocultar etiquetas -->
+                                    <button id="toggle-labels" class="btn-control">
+                                        <i class="bi bi-tag"></i>
+                                    </button>
 
-        <!-- Mostrar/ocultar panel lateral -->
-        <button id="btn-panel" class="btn-control">
-            <i class="bi bi-layout-sidebar"></i>
-        </button>
-    </div>
-</div>
-   <!-- ==============================
+                                    <!-- Mostrar/ocultar panel lateral -->
+                                    <button id="btn-panel" class="btn-control">
+                                        <i class="bi bi-layout-sidebar"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ==============================
     IMÁGENES
 ============================== -->
-<!-- Funciona como fuente de datos para JS (crearEstructura).
+                            <!-- Funciona como fuente de datos para JS (crearEstructura).
 -->
-<div style="display:none;">
+                            <div style="display:none;">
 
-    <!-- IMAGEN INICIAL (4X) -->
-    <!-- data-inicial="true" define la imagen que se carga al inicio -->
-    <button class="thumb-btn" 
-        data-level="4" 
-        data-id="serosa" 
-        data-src="../../img/glandula_salival/serosa/foco1/E14-O43_4X.jpg" 
-        data-inicial="true">
-    </button>
+                                <!-- IMAGEN INICIAL (4X) -->
+                                <!-- data-inicial="true" define la imagen que se carga al inicio -->
+                                <button class="thumb-btn" data-level="4" data-id="serosa4x"
+                                    data-src="../../img/glandula_salival/serosa/foco1/E14-O43_4X.jpg"
+                                    data-inicial="true">
+                                </button>
 
-    <!-- IMAGEN 10X -->
-    <button class="thumb-btn" 
-        data-level="10" 
-        data-id="serosa10X" 
-        data-src="../../img/glandula_salival/serosa/foco1/E14-O43_10X.jpg">
-    </button>
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="serosa40X" 
-        data-src="../../img/glandula_salival/serosa/foco1/E14-O43_40X.jpg">
-    </button>
+                                <!-- IMAGEN 10X -->
+                                <button class="thumb-btn" data-level="10" data-id="serosa10X"
+                                    data-src="../../img/glandula_salival/serosa/foco1/E14-O43_10X.jpg">
+                                </button>
+                                <button class="thumb-btn" data-level="40" data-id="serosa40X"
+                                    data-src="../../img/glandula_salival/serosa/foco1/E14-O43_40X.jpg">
+                                </button>
 
-    <!-- IMÁGENES 40X -->
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="serosa40X2" 
-        data-src="../../img/glandula_salival/serosa/foco1/E14-O43_40X2.jpg">
-    </button>
-
-  
+                                <!-- IMÁGENES 40X -->
+                                <button class="thumb-btn" data-level="40" data-id="serosa40X2"
+                                    data-src="../../img/glandula_salival/serosa/foco1/E14-O43_40X2.jpg">
+                                </button>
 
 
-</div>
-<!-- ==============================
+
+
+                            </div>
+                            <!-- ==============================
     ETIQUETAS
 ============================== -->
 
-    <!-- EJEMPLO (4X) -->
-    <!-- 
+                            <!-- EJEMPLO (4X) -->
+                            <!-- 
     data-level → nivel de imagen QUE PUEDE SER 4, 10 o 40
     data-id    → NOMBRE DE LA IMAGEN A LA QUE SE ASOCIA (data-id de los botones anteriores)
     data-x/y   → coordenadas
     data-label → texto mostrado EN LA ETIQUETA
     -->
-<div id="config-etiquetas" style="display:none;">
+                            <div id="config-etiquetas" style="display:none;">
 
-    <div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.0988"
-data-y="0.3424"
-data-label="CA">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.0988"
+                                    data-y="0.3424" data-label="CA">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.1462"
-data-y="0.2546"
-data-label="L">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.1462"
+                                    data-y="0.2546" data-label="L">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.2377"
-data-y="0.146"
-data-label="L">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.2377"
+                                    data-y="0.146" data-label="L">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.2371"
-data-y="0.3651"
-data-label="L">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.2371"
+                                    data-y="0.3651" data-label="L">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.2901"
-data-y="0.2092"
-data-label="-->">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.2901"
+                                    data-y="0.2092" data-label="-->">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.1929"
-data-y="0.259"
-data-label="T">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.1929"
+                                    data-y="0.259" data-label="T">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.316"
-data-y="0.0324"
-data-label="<--">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.316"
+                                    data-y="0.0324" data-label="<--">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.5679"
-data-y="0.141"
-data-label="L">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.5679"
+                                    data-y="0.141" data-label="L">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.4044"
-data-y="0.3392"
-data-label="--">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.4044"
+                                    data-y="0.3392" data-label="--">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.5262"
-data-y="0.211"
-data-label="--">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.5262"
+                                    data-y="0.211" data-label="--">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.5371"
-data-y="0.0881"
-data-label="--">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.5371"
+                                    data-y="0.0881" data-label="--">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="serosa"
-data-x="0.4821"
-data-y="0.3976"
-data-label="--">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="serosa4x" data-x="0.4821"
+                                    data-y="0.3976" data-label="--">
+                                </div>
 
 
-    
-
-<!-- ETIQUETAS en 10X -->
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.1209"
-data-y="0.3789"
-data-label="CA">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2589"
-data-y="0.2644"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2293"
-data-y="0.1249"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2615"
-data-y="0.409"
-data-label="L">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.4199"
-data-y="0.3806"
-data-label="T">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.4567"
-data-y="0.3085"
-data-label="T">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.5053"
-data-y="0.4499"
-data-label="C">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.4067"
-data-y="0.1218"
-data-label="L">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.5653"
-data-y="0.1843"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.6442"
-data-y="0.1565"
-data-label="CI">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.7032"
-data-y="0.0273"
-data-label="CI">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.5915"
-data-y="0.4153"
-data-label="CI">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.8638"
-data-y="0.2562"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.8828"
-data-y="0.2051"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.8771"
-data-y="0.3061"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.8158"
-data-y="0.2821"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2523"
-data-y="0.2192"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2946"
-data-y="0.2967"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.2226"
-data-y="0.3087"
-data-label="--">
-</div>
-
-<div class="etiqueta-link"
-data-level="10"
-data-id="serosa10X"
-data-x="0.1999"
-data-y="0.2406"
-data-label="--">
-</div>
-
-<!-- ETIQUETAS en 40X -->
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.4904"
-data-y="0.1346"
-data-label="T">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.4599"
-data-y="0.2623"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.1909"
-data-y="0.4059"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.3835"
-data-y="0.51"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.6869"
-data-y="0.4058"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.8788"
-data-y="0.3364"
-data-label="CI">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.7432"
-data-y="0.0519"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X"
-data-x="0.896"
-data-y="0.1611"
-data-label="GS">
-</div>
-
-<!-- ETIQUETAS en 40X2 -->
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X2"
-data-x="0.4199"
-data-y="0.2458"
-data-label="CA">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X2"
-data-x="0.7011"
-data-y="0.3853"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X2"
-data-x="0.7592"
-data-y="0.2167"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X2"
-data-x="0.4594"
-data-y="0.0471"
-data-label="GS">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="serosa40X2"
-data-x="0.4522"
-data-y="0.1807"
-data-label="--">
-</div>
 
 
-<!-- ==============================
+                                <!-- ETIQUETAS en 10X -->
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.1209"
+                                    data-y="0.3789" data-label="CA">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2589"
+                                    data-y="0.2644" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2293"
+                                    data-y="0.1249" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2615"
+                                    data-y="0.409" data-label="L">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.4199"
+                                    data-y="0.3806" data-label="T">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.4567"
+                                    data-y="0.3085" data-label="T">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.5053"
+                                    data-y="0.4499" data-label="C">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.4067"
+                                    data-y="0.1218" data-label="L">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.5653"
+                                    data-y="0.1843" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.6442"
+                                    data-y="0.1565" data-label="CI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.7032"
+                                    data-y="0.0273" data-label="CI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.5915"
+                                    data-y="0.4153" data-label="CI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.8638"
+                                    data-y="0.2562" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.8828"
+                                    data-y="0.2051" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.8771"
+                                    data-y="0.3061" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.8158"
+                                    data-y="0.2821" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2523"
+                                    data-y="0.2192" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2946"
+                                    data-y="0.2967" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.2226"
+                                    data-y="0.3087" data-label="--">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="10" data-id="serosa10X" data-x="0.1999"
+                                    data-y="0.2406" data-label="--">
+                                </div>
+
+                                <!-- ETIQUETAS en 40X -->
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.4904"
+                                    data-y="0.1346" data-label="T">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.4599"
+                                    data-y="0.2623" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.1909"
+                                    data-y="0.4059" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.3835"
+                                    data-y="0.51" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.6869"
+                                    data-y="0.4058" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.8788"
+                                    data-y="0.3364" data-label="CI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.7432"
+                                    data-y="0.0519" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X" data-x="0.896"
+                                    data-y="0.1611" data-label="GS">
+                                </div>
+
+                                <!-- ETIQUETAS en 40X2 -->
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X2" data-x="0.4199"
+                                    data-y="0.2458" data-label="CA">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X2" data-x="0.7011"
+                                    data-y="0.3853" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X2" data-x="0.7592"
+                                    data-y="0.2167" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X2" data-x="0.4594"
+                                    data-y="0.0471" data-label="GS">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="serosa40X2" data-x="0.4522"
+                                    data-y="0.1807" data-label="--">
+                                </div>
+
+
+                                <!-- ==============================
     CUADRANTES (ENLACES ENTRE NIVELES)
 ============================== -->
-<!-- 
+                                <!-- 
 Bloque que define áreas clicables.
 Permiten navegar entre imágenes (niveles 4, 10, 40).
 -->
-<div id="config-cuadrantes" style="display:none;">
-      <!-- EJEMPLO: de 4X → 10X -->
-    <!-- 
+                                <div id="config-cuadrantes" style="display:none;">
+                                    <!-- EJEMPLO: de 4X → 10X -->
+                                    <!-- 
     data-parent       → nivel actual= (4, 10 o 40)
     data-parent-id    → imagen origen (data-id de los botones anteriores)
     data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
@@ -605,65 +403,50 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     data-x/y          → posición (inicio)
     data-w/h          → tamaño (ancho/alto)
     data-label        → texto mostrado en hover = 4X, 10X o 40X
-    --> 
-<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+    -->
+                                    <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
 
-<div data-parent="4"
-data-parent-id="serosa"
-data-target="serosa10X"
-data-target-level="10"
-data-label="10X"
-data-x="0.0647"
-data-y="0.1504"
-data-w="0.3971"
-data-h="0.2399">
-</div>
+                                    <div data-parent="4" data-parent-id="serosa4x" data-target="serosa10X"
+                                        data-target-level="10" data-label="10X" data-x="0.0647" data-y="0.1504"
+                                        data-w="0.3971" data-h="0.2399">
+                                    </div>
 
 
-<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+                                    <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
 
-<div data-parent="10"
-data-parent-id="serosa10X"
-data-target="serosa40X"
-data-target-level="40"
-data-label="40X"
-data-x="0.336"
-data-y="0.2833"
-data-w="0.2490"
-data-h="0.1201">
-</div>
+                                    <div data-parent="10" data-parent-id="serosa10X" data-target="serosa40X"
+                                        data-target-level="40" data-label="40X" data-x="0.336" data-y="0.2833"
+                                        data-w="0.2490" data-h="0.1201">
+                                    </div>
 
-<div data-parent="10"
-data-parent-id="serosa10X"
-data-target="serosa40X2"
-data-target-level="40"
-data-label="40X2"
-data-x="0.088"
-data-y="0.4147"
-data-w="0.2324"
-data-h="0.1332">
-</div>
+                                    <div data-parent="10" data-parent-id="serosa10X" data-target="serosa40X2"
+                                        data-target-level="40" data-label="40X2" data-x="0.088" data-y="0.4147"
+                                        data-w="0.2324" data-h="0.1332">
+                                    </div>
 
-    <!-- ==============================
+                                    <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
-<!-- Se carga contenido común (footer) mediante JS -->
-<div id="footer-container"></div>
+                                    <!-- Se carga contenido común (footer) mediante JS -->
+                                    <div id="footer-container"></div>
 
-<!-- ==============================
+                                    <!-- ==============================
      SCRIPTS
 ============================== -->
 
-<!-- Plantilla: carga header/footer dinámicos -->
-<script src="../../../../../js/plantilla.js"></script>
+                                    <!-- Plantilla: carga header/footer dinámicos -->
+                                    <script src="../../../../../js/plantilla.js"></script>
 
-<!-- Bootstrap JS (componentes interactivos) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                                    <!-- Bootstrap JS (componentes interactivos) -->
+                                    <script
+                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- OpenSeadragon (motor del visor) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+                                    <!-- OpenSeadragon (motor del visor) -->
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 
-<!-- Script principal PARA EL VISOR DE IMÁGENES -->
-<script type="module" src="../../../../../js/main.js"></script>
+                                    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
+                                    <script type="module" src="../../../../../js/main.js"></script>
 </body>
+
 </html>
