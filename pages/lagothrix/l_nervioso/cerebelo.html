@@ -1,463 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histología - Glandula Salival Mucosa</title>
-<!-- ==============================
+    <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
 
-<!-- Bootstrap (layout y componentes) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<!-- Iconos -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<!-- ==============================
+    <!-- Bootstrap (layout y componentes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- ==============================
      ESTILOS PROPIOS
 ============================== -->
-<link rel="stylesheet" href="../../../css/estiloGeneral.css"/><!-- estilos globales -->
-<link rel="stylesheet" href="../../../css/estiloVisor.css"/> <!-- visor -->
-<link rel="stylesheet" href="../../../css/estiloPanel.css"/><!-- panel lateral -->
+    <link rel="stylesheet" href="../../../css/estiloGeneral.css" /><!-- estilos globales -->
+    <link rel="stylesheet" href="../../../css/estiloVisor.css" /> <!-- visor -->
+    <link rel="stylesheet" href="../../../css/estiloPanel.css" /><!-- panel lateral -->
 
 
 </head>
+
 <body>
 
-<!-- Header dinámico (cargado por JS) -->
-<div id="header-container"></div>
-<!-- ==============================
+    <!-- Header dinámico (cargado por JS) -->
+    <div id="header-container"></div>
+    <!-- ==============================
      CONTENEDOR PRINCIPAL
 ============================== -->
-<div class="container-fluid container-pag">
+    <div class="container-fluid container-pag">
 
-<div class="text-center my-4">
-<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Nervioso - Cerebelo</h2>
-</div>
+        <div class="text-center my-4">
+            <h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Nervioso - Cerebelo</h2>
+        </div>
 
-<div class="row">
-<div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-12">
 
-<div class="image-container">
+                <div class="image-container">
 
-<div id="viewer">
-   <!-- VISOR (OpenSeadragon)-->
-<!-- Aquí se renderiza la imagen -->
+                    <div id="viewer">
+                        <!-- VISOR (OpenSeadragon)-->
+                        <!-- Aquí se renderiza la imagen -->
 
-<div id="viewer-main"></div>
+                        <div id="viewer-main"></div>
 
-<!-- PANEL DESCRIPCIÓN ---------------------------------------------->
+                        <!-- PANEL DESCRIPCIÓN ---------------------------------------------->
 
-<div id="panel-descripcion">
+                        <div id="panel-descripcion">
 
-<h3 class="title">Cerebelo</h3>
+                            <h3 class="title">Cerebelo</h3>
 
-<div class="text-content-area">
+                            <div class="text-content-area">
 
-<!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="pulmon">
-    <p><strong>AUMENTO 4X:</strong></p>
-<p>
-El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos 
-en la luz y la pared del vaso conformado por: 
-</p>
-<ul>
-  <li><strong>TI:</strong> Túnica íntima</li>
-  <li><strong>TM:</strong> Túnica media</li>
-  <li><strong>TA:</strong> Túnica adventicia</li>
-</ul>
-</div>
+                                <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
+                                <div class="pagina active" data-level="4" data-id="cerebelo4x">
+                                    <p><strong>AUMENTO 4X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                    <!-- <ul>
+                                        <li><strong>TI:</strong> Túnica íntima</li>
+                                        <li><strong>TM:</strong> Túnica media</li>
+                                        <li><strong>TA:</strong> Túnica adventicia</li>
+                                    </ul> -->
+                                </div>
 
-<!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="pulmon10X">
-<p><strong>AUMENTO 10X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio, (TC) tejido conectivo subendotelial y (ME) lámina elástica.
-</p>
-<p>
-<strong>(TM) Túnica media:</strong>
-Fibras de músculo liso.
-</p>
-<p>
-<strong>(TA) Túnica adventicia:</strong>
-Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
-</p>
-</div>
+                                <!-- = PÁGINA 10X -->
+                                <div class="pagina" data-level="10" data-id="cerebelo10X">
+                                    <p><strong>AUMENTO 10X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
 
-<!-- = PÁGINA 40X -->
+                                <!-- = PÁGINA 40X -->
 
-<div class="pagina" data-level="40" data-id="pulmon40X">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica media:</strong>
-(CM) Células de músculo liso fusiformes con citoplasma no estriado.
-<br>
-Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
-</p>
-</div>
+                                <div class="pagina" data-level="40" data-id="cerebelo40X">
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
 
-<div class="pagina" data-level="40" data-id="pulmon40X2">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
-<br>
-Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
-</p>
-</div>
-</div>
+                                <div class="pagina" data-level="40" data-id="cerebelo40X2">
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
+                                <div class="pagina" data-level="40" data-id="cerebelo40X3">
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
+                                </div>
+                            </div>
 
-<!-- ==============================
+                            <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
-<div id="visor-toolbar" class="visor-toolbar">
+                            <div id="visor-toolbar" class="visor-toolbar">
 
-    <!-- IZQUIERDA: navegación básica -->
-    <div class="toolbar-left">
+                                <!-- IZQUIERDA: navegación básica -->
+                                <div class="toolbar-left">
 
-        <!-- Ir a imagen inicial -->
-        <button id="btn-home" class="btn-control">
-            <i class="bi bi-house"></i>
-        </button>
+                                    <!-- Ir a imagen inicial -->
+                                    <button id="btn-home" class="btn-control">
+                                        <i class="bi bi-house"></i>
+                                    </button>
 
-        <!-- Volver a la anterior (historial) -->
-        <button id="btn-back" class="btn-control">
-            <i class="bi bi-arrow-left"></i>
-        </button>
+                                    <!-- Volver a la anterior (historial) -->
+                                    <button id="btn-back" class="btn-control">
+                                        <i class="bi bi-arrow-left"></i>
+                                    </button>
 
-        <!-- Salir de pantalla completa -->
-        <button id="btn-exit" class="btn-control">
-            <i class="bi bi-x-circle"></i>
-        </button>
+                                    <!-- Salir de pantalla completa -->
+                                    <button id="btn-exit" class="btn-control">
+                                        <i class="bi bi-x-circle"></i>
+                                    </button>
 
-    </div>
+                                </div>
 
-    <!-- CENTRO: controles del visor -->
-    <div class="toolbar-center">
+                                <!-- CENTRO: controles del visor -->
+                                <div class="toolbar-center">
 
-        <!-- Zoom out -->
-        <button id="zoom-out" class="btn-control">
-            <i class="bi bi-zoom-out"></i>
-        </button>
+                                    <!-- Zoom out -->
+                                    <button id="zoom-out" class="btn-control">
+                                        <i class="bi bi-zoom-out"></i>
+                                    </button>
 
-        <!-- Zoom in -->
-        <button id="zoom-in" class="btn-control">
-            <i class="bi bi-zoom-in"></i>
-        </button>
+                                    <!-- Zoom in -->
+                                    <button id="zoom-in" class="btn-control">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </button>
 
-        <!-- Ajustar imagen a pantalla -->
-        <button id="fit-btn" class="btn-control">
-            <i class="bi bi-aspect-ratio"></i>
-        </button>
+                                    <!-- Ajustar imagen a pantalla -->
+                                    <button id="fit-btn" class="btn-control">
+                                        <i class="bi bi-aspect-ratio"></i>
+                                    </button>
 
-        <!-- Activar/desactivar fullscreen -->
-        <button id="fullscreen-btn" class="btn-control">
-            <i class="bi bi-fullscreen"></i>
-        </button>
+                                    <!-- Activar/desactivar fullscreen -->
+                                    <button id="fullscreen-btn" class="btn-control">
+                                        <i class="bi bi-fullscreen"></i>
+                                    </button>
 
-        <!-- Mostrar/ocultar etiquetas -->
-        <button id="toggle-labels" class="btn-control">
-            <i class="bi bi-tag"></i>
-        </button>
+                                    <!-- Mostrar/ocultar etiquetas -->
+                                    <button id="toggle-labels" class="btn-control">
+                                        <i class="bi bi-tag"></i>
+                                    </button>
 
-        <!-- Mostrar/ocultar panel lateral -->
-        <button id="btn-panel" class="btn-control">
-            <i class="bi bi-layout-sidebar"></i>
-        </button>
-    </div>
-</div>
-   <!-- ==============================
+                                    <!-- Mostrar/ocultar panel lateral -->
+                                    <button id="btn-panel" class="btn-control">
+                                        <i class="bi bi-layout-sidebar"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- ==============================
     IMÁGENES
 ============================== -->
-<!-- Funciona como fuente de datos para JS (crearEstructura).
+                            <!-- Funciona como fuente de datos para JS (crearEstructura).
 -->
-<div style="display:none;">
+                            <div style="display:none;">
 
-    <!-- IMAGEN INICIAL (4X) -->
-    <!-- data-inicial="true" define la imagen que se carga al inicio -->
-    <button class="thumb-btn" 
-        data-level="4" 
-        data-id="cerebelo" 
-        data-src="img/cerebelo/foco1/4X.jpg" 
-        data-inicial="true">
-    </button>
+                                <!-- IMAGEN INICIAL (4X) -->
+                                <!-- data-inicial="true" define la imagen que se carga al inicio -->
+                                <button class="thumb-btn" data-level="4" data-id="cerebelo4x"
+                                    data-src="img/cerebelo/foco1/4X.jpg" data-inicial="true">
+                                </button>
 
-    <!-- IMAGEN 10X -->
-    <button class="thumb-btn" 
-        data-level="10" 
-        data-id="10X" 
-        data-src="img/cerebelo/foco1/10X.jpg">
-    </button>
+                                <!-- IMAGEN 10X -->
+                                <button class="thumb-btn" data-level="10" data-id="cerebelo10X"
+                                    data-src="img/cerebelo/foco1/10X.jpg">
+                                </button>
 
-    
-    <!-- IMÁGENES 40X -->
-     <button class="thumb-btn" 
-        data-level="40" 
-        data-id="40X" 
-        data-src="img/cerebelo/foco1/40X.jpg">
-    </button>
 
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="40X2" 
-        data-src="img/cerebelo/foco1/40X2.jpg">
-    </button>
+                                <!-- IMÁGENES 40X -->
+                                <button class="thumb-btn" data-level="40" data-id="cerebelo40X"
+                                    data-src="img/cerebelo/foco1/40X.jpg">
+                                </button>
 
-     <button class="thumb-btn" 
-        data-level="40" 
-        data-id="40X3" 
-        data-src="img/cerebelo/foco1/40X3.jpg">
-    </button>
+                                <button class="thumb-btn" data-level="40" data-id="cerebelo40X2"
+                                    data-src="img/cerebelo/foco1/40X2.jpg">
+                                </button>
 
-   
+                                <button class="thumb-btn" data-level="40" data-id="cerebelo40X3"
+                                    data-src="img/cerebelo/foco1/40X3.jpg">
+                                </button>
 
-</div>
-<!-- ==============================
+
+
+                            </div>
+                            <!-- ==============================
     ETIQUETAS
 ============================== -->
 
-    <!-- EJEMPLO (4X) -->
-    <!-- 
+                            <!-- EJEMPLO (4X) -->
+                            <!-- 
     data-level → nivel de imagen QUE PUEDE SER 4, 10 o 40
     data-id    → NOMBRE DE LA IMAGEN A LA QUE SE ASOCIA (data-id de los botones anteriores)
     data-x/y   → coordenadas
     data-label → texto mostrado EN LA ETIQUETA
     -->
-<div id="config-etiquetas" style="display:none;">
+                            <div id="config-etiquetas" style="display:none;">
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.7302"
-data-y="0.5067"
-data-label="M">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.7302"
+                                    data-y="0.5067" data-label="M">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.2826"
-data-y="0.4177"
-data-label="SB">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.2826"
+                                    data-y="0.4177" data-label="SB">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.2934"
-data-y="0.1759"
-data-label="SG">
-</div>
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.0768"
-data-y="0.1873"
-data-label="F">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.2934"
+                                    data-y="0.1759" data-label="SG">
+                                </div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.0768"
+                                    data-y="0.1873" data-label="F">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.2694"
-data-y="0.073"
-data-label="M">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.2694"
+                                    data-y="0.073" data-label="M">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="cerebelo"
-data-x="0.8004"
-data-y="0.1147"
-data-label="F">
-</div>
+                                <div class="etiqueta-link" data-level="4" data-id="cerebelo4x" data-x="0.8004"
+                                    data-y="0.1147" data-label="F">
+                                </div>
 
-<!-- ETIQUETAS en 10X -->
-<div class="etiqueta-link"
-data-level="10"
-data-id="10X"
-data-x="0.1469"
-data-y="0.1733"
-data-label="PM">
-</div>
+                                <!-- ETIQUETAS en 10X -->
+                                <div class="etiqueta-link" data-level="10" data-id="cerebelo10X" data-x="0.1469"
+                                    data-y="0.1733" data-label="PM">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="10X"
-data-x="0.407"
-data-y="0.106"
-data-label="CM">
-</div>
+                                <div class="etiqueta-link" data-level="10" data-id="cerebelo10X" data-x="0.407"
+                                    data-y="0.106" data-label="CM">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="10X"
-data-x="0.5514"
-data-y="0.1357"
-data-label="CPI">
-</div>
+                                <div class="etiqueta-link" data-level="10" data-id="cerebelo10X" data-x="0.5514"
+                                    data-y="0.1357" data-label="CPI">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="10X"
-data-x="0.6978"
-data-y="0.3809"
-data-label="SB">
-</div>
+                                <div class="etiqueta-link" data-level="10" data-id="cerebelo10X" data-x="0.6978"
+                                    data-y="0.3809" data-label="SB">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="10X"
-data-x="0.5222"
-data-y="0.2755"
-data-label="CG">
-</div>
+                                <div class="etiqueta-link" data-level="10" data-id="cerebelo10X" data-x="0.5222"
+                                    data-y="0.2755" data-label="CG">
+                                </div>
 
-<!-- ETIQUETAS en 40X -->
+                                <!-- ETIQUETAS en 40X3 -->
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.0287"
-data-y="0.0312"
-data-label="CP">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.0287"
+                                    data-y="0.0312" data-label="CP">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.1661"
-data-y="0.1988"
-data-label="VS">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.1661"
+                                    data-y="0.1988" data-label="VS">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.06"
-data-y="0.19"
-data-label="GG">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.06"
+                                    data-y="0.19" data-label="GG">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.0701"
-data-y="0.3541"
-data-label="*">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.0701"
+                                    data-y="0.3541" data-label="*">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.2826"
-data-y="0.3752"
-data-label="GR">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.2826"
+                                    data-y="0.3752" data-label="GR">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.5339"
-data-y="0.2035"
-data-label="GR">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.5339"
+                                    data-y="0.2035" data-label="GR">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.7252"
-data-y="0.1795"
-data-label="GR">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.7252"
+                                    data-y="0.1795" data-label="GR">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.7896"
-data-y="0.439"
-data-label="*">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.7896"
+                                    data-y="0.439" data-label="*">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X3"
-data-x="0.1456"
-data-y="0.5091"
-data-label="*">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X3" data-x="0.1456"
+                                    data-y="0.5091" data-label="*">
+                                </div>
 
-<!-- ETIQUETAS en 40X2 -->
+                                <!-- ETIQUETAS en 40X2 -->
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.0591"
-data-y="0.111"
-data-label="PM">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.0591"
+                                    data-y="0.111" data-label="PM">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.0743"
-data-y="0.2108"
-data-label="VS">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.0743"
+                                    data-y="0.2108" data-label="VS">
+                                </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.1639"
-data-y="0.3472"
-data-label="VS">
-</div>
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.1639"
+                                    data-y="0.3472" data-label="VS">
+                                </div>
 
-<!-- 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.4137"
-data-y="0.3208"
-data-label="">
-</div>-->
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.4137"
+                                    data-y="0.3208" data-label="">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.3727"
+                                    data-y="0.2514" data-label="GLI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.3285"
+                                    data-y="0.3549" data-label="GLI">
+                                </div>
+
+                                <div class="etiqueta-link" data-level="40" data-id="cerebelo40X2" data-x="0.9276"
+                                    data-y="0.4477" data-label="CP">
+                                </div>
 
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.3727"
-data-y="0.2514"
-data-label="GLI">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.3285"
-data-y="0.3549"
-data-label="GLI">
-</div>
-
-<div class="etiqueta-link"
-data-level="40"
-data-id="40X2"
-data-x="0.9276"
-data-y="0.4477"
-data-label="CP">
-</div>
-
-
-<!-- ==============================
+                                <!-- ==============================
     CUADRANTES (ENLACES ENTRE NIVELES)
 ============================== -->
-<!-- 
+                                <!-- 
 Bloque que define áreas clicables.
 Permiten navegar entre imágenes (niveles 4, 10, 40).
 -->
-<div id="config-cuadrantes" style="display:none;">
-      <!-- EJEMPLO: de 4X → 10X -->
-    <!-- 
+                                <div id="config-cuadrantes" style="display:none;">
+                                    <!-- EJEMPLO: de 4X → 10X -->
+                                    <!-- 
     data-parent       → nivel actual= (4, 10 o 40)
     data-parent-id    → imagen origen (data-id de los botones anteriores)
     data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
@@ -465,78 +336,57 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     data-x/y          → posición (inicio)
     data-w/h          → tamaño (ancho/alto)
     data-label        → texto mostrado en hover = 4X, 10X o 40X
-    --> 
-<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+    -->
+                                    <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
 
-<div data-parent="4"
-data-parent-id="cerebelo"
-data-target="10X"
-data-target-level="10"
-data-label="10X"
-data-x="0.3501"
-data-y="0.0013"
-data-w="0.4350"
-data-h="0.2235">
-</div>
+                                    <div data-parent="4" data-parent-id="cerebelo4x" data-target="cerebelo10X"
+                                        data-target-level="10" data-label="10X" data-x="0.3501" data-y="0.0013"
+                                        data-w="0.4350" data-h="0.2235">
+                                    </div>
 
 
 
 
-<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+                                    <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
 
-<div data-parent="10"
-data-parent-id="10X"
-data-target="40X2"
-data-target-level="40"
-data-label="40X"
-data-x="0.1533"
-data-y="0.1142"
-data-w="0.2786"
-data-h="0.3130">
-</div>
+                                    <div data-parent="10" data-parent-id="cerebelo10X" data-target="cerebelo40X2"
+                                        data-target-level="40" data-label="40X2" data-x="0.1533" data-y="0.1142"
+                                        data-w="0.2786" data-h="0.3130">
+                                    </div>
 
-<div data-parent="10"
-data-parent-id="10X"
-data-target="40X"
-data-target-level="40"
-data-label="40X"
-data-x="0.3779"
-data-y="0.1622"
-data-w="0.2462"
-data-h="0.1301">
-</div>
+                                    <div data-parent="10" data-parent-id="cerebelo10X" data-target="cerebelo40X"
+                                        data-target-level="40" data-label="40X" data-x="0.3779" data-y="0.1622"
+                                        data-w="0.2462" data-h="0.1301">
+                                    </div>
 
-<div data-parent="10"
-data-parent-id="10X"
-data-target="40X3"
-data-target-level="40"
-data-label="40X"
-data-x="0.4554"
-data-y="0.1536"
-data-w="0.2103"
-data-h="0.1692">
-</div> 
+                                    <div data-parent="10" data-parent-id="cerebelo10X" data-target="cerebelo40X3"
+                                        data-target-level="40" data-label="40X3" data-x="0.4554" data-y="0.1536"
+                                        data-w="0.2103" data-h="0.1692">
+                                    </div>
 
-    <!-- ==============================
+                                    <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
-<!-- Se carga contenido común (footer) mediante JS -->
-<div id="footer-container"></div>
+                                    <!-- Se carga contenido común (footer) mediante JS -->
+                                    <div id="footer-container"></div>
 
-<!-- ==============================
+                                    <!-- ==============================
      SCRIPTS
 ============================== -->
 
-<!-- Plantilla: carga header/footer dinámicos -->
-<script src="../../../js/plantilla.js"></script>
+                                    <!-- Plantilla: carga header/footer dinámicos -->
+                                    <script src="../../../js/plantilla.js"></script>
 
-<!-- Bootstrap JS (componentes interactivos) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                                    <!-- Bootstrap JS (componentes interactivos) -->
+                                    <script
+                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- OpenSeadragon (motor del visor) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+                                    <!-- OpenSeadragon (motor del visor) -->
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 
-<!-- Script principal PARA EL VISOR DE IMÁGENES -->
-<script type="module" src="../../../js/main.js"></script>
+                                    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
+                                    <script type="module" src="../../../js/main.js"></script>
 </body>
+
 </html>
