@@ -1,322 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histología - Arteria</title>
-<!-- ==============================
+    <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
 
-<!-- Bootstrap (layout y componentes) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<!-- Iconos -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<!-- ==============================
+    <!-- Bootstrap (layout y componentes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- ==============================
      ESTILOS PROPIOS
 ============================== -->
-<link rel="stylesheet" href="../../../../css/estiloGeneral.css"/><!-- estilos globales -->
-<link rel="stylesheet" href="../../../../css/estiloVisor.css"/> <!-- visor -->
-<link rel="stylesheet" href="../../../../css/estiloPanel.css"/><!-- panel lateral -->
+    <link rel="stylesheet" href="../../../../css/estiloGeneral.css" /><!-- estilos globales -->
+    <link rel="stylesheet" href="../../../../css/estiloVisor.css" /> <!-- visor -->
+    <link rel="stylesheet" href="../../../../css/estiloPanel.css" /><!-- panel lateral -->
 
 
 </head>
+
 <body>
 
-<!-- Header dinámico (cargado por JS) -->
-<div id="header-container"></div>
-<!-- ==============================
+    <!-- Header dinámico (cargado por JS) -->
+    <div id="header-container"></div>
+    <!-- ==============================
      CONTENEDOR PRINCIPAL
 ============================== -->
-<div class="container-fluid container-pag">
+    <div class="container-fluid container-pag">
 
-<div class="text-center my-4">
-<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema digestivo - lengua</h2>
-</div>
+        <div class="text-center my-4">
+            <h2 class="fw-bold text-primary">LAGOTHRIX - Sistema digestivo - Lengua</h2>
+        </div>
 
-<div class="row">
-<div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-12">
 
-<div class="image-container">
+                <div class="image-container">
 
-<div id="viewer">
-   <!-- VISOR (OpenSeadragon)-->
-<!-- Aquí se renderiza la imagen -->
+                    <div id="viewer">
+                        <!-- VISOR (OpenSeadragon)-->
+                        <!-- Aquí se renderiza la imagen -->
 
-<div id="viewer-main"></div>
+                        <div id="viewer-main"></div>
 
-<!-- PANEL DESCRIPCIÓN ---------------------------------------------->
+                        <!-- PANEL DESCRIPCIÓN ---------------------------------------------->
 
-<div id="panel-descripcion">
+                        <div id="panel-descripcion">
 
-<h3 class="title">Lengua</h3>
+                            <h3 class="title">Lengua</h3>
 
-<div class="text-content-area">
+                            <div class="text-content-area">
 
-<!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="lengua">
-    <p><strong>AUMENTO 4X:</strong></p>
-<p>
-El tejido de la imagen corresponde a una lengua. Se observan proyecciones de la superficie compatibles con papilas linguales, recubiertas por un epitelio estratificado plano. Por debajo se distingue la mucosa con su lámina propia de tejido conectivo, seguida de la submucosa de aspecto más laxo. En las capas más profundas se evidencia tejido muscular estriado esquelético dispuesto en diferentes direcciones, característico de este órgano.
-</p>
-<ul>
-  <li><strong>P:</strong> Papila lingual</li>
-  <li><strong>M:</strong> Mucosa</li>
-  <li><strong>S:</strong> Submucosa</li>
-  <li><strong>Mu:</strong> Músculo</li>
-</ul>
-</div>
-
-
-<!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="lengua10x">
-<p><strong>AUMENTO 10X:</strong></p>
-<p>
-El tejido de la imagen corresponde a una lengua. Se observa un epitelio estratificado plano (E) que recubre la superficie formando papilas linguales. Debajo del epitelio se identifica la lámina basal (LB) y la lámina propia (L), constituida por tejido conectivo.
-</p>
-<p>
-En las papilas se aprecia tejido conectivo (TC) que forma el eje central de estas estructuras.
-</p>
-<p>
-En la superficie se distingue una capa de queratina (C), característica de epitelios sometidos a fricción.
-</p>
-</div>
-
-<!-- = PÁGINA 40X -->
-<div class="pagina" data-level="40" data-id="lengua40x">
-
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-Se observa un epitelio estratificado plano (E) con varias capas celulares bien definidas, característico de la mucosa lingual. En la superficie se distingue una capa de queratina (C), indicando adaptación a la fricción.
-<br>
-Por debajo del epitelio se encuentra la lámina propia, constituida por tejido conectivo (TC), con abundantes células y fibras.
-<br>
-El tejido conectivo (TC) forma el eje de las papilas linguales, proporcionando soporte al epitelio. Se observan núcleos de fibroblastos y matriz extracelular, característicos de este tipo de tejido.
-</p>
+                                <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
+                                <div class="pagina active" data-level="4" data-id="lengua4x">
+                                    <p><strong>AUMENTO 4X:</strong></p>
+                                    <p>
+                                        El tejido de la imagen corresponde a una lengua. Se observan proyecciones de la
+                                        superficie compatibles con papilas linguales, recubiertas por un epitelio
+                                        estratificado plano. Por debajo se distingue la mucosa con su lámina propia de
+                                        tejido conectivo, seguida de la submucosa de aspecto más laxo. En las capas más
+                                        profundas se evidencia tejido muscular estriado esquelético dispuesto en
+                                        diferentes direcciones, característico de este órgano.
+                                    </p>
+                                    <ul>
+                                        <li><strong>P:</strong> Papila lingual</li>
+                                        <li><strong>M:</strong> Mucosa</li>
+                                        <li><strong>S:</strong> Submucosa</li>
+                                        <li><strong>Mu:</strong> Músculo</li>
+                                    </ul>
+                                </div>
 
 
-</div>
+                                <!-- = PÁGINA 10X -->
+                                <div class="pagina" data-level="10" data-id="lengua10x">
+                                    <p><strong>AUMENTO 10X:</strong></p>
+                                    <p>
+                                        El tejido de la imagen corresponde a una lengua. Se observa un epitelio
+                                        estratificado plano (E) que recubre la superficie formando papilas linguales.
+                                        Debajo del epitelio se identifica la lámina basal (LB) y la lámina propia (L),
+                                        constituida por tejido conectivo.
+                                    </p>
+                                    <p>
+                                        En las papilas se aprecia tejido conectivo (TC) que forma el eje central de
+                                        estas estructuras.
+                                    </p>
+                                    <p>
+                                        En la superficie se distingue una capa de queratina (C), característica de
+                                        epitelios sometidos a fricción.
+                                    </p>
+                                </div>
 
-<!-- ==============================
+                                <!-- = PÁGINA 40X -->
+                                <div class="pagina" data-level="40" data-id="lengua40x">
+
+                                    <p><strong>AUMENTO 40X:</strong></p>
+                                    <p>
+                                        Se observa un epitelio estratificado plano (E) con varias capas celulares bien
+                                        definidas, característico de la mucosa lingual. En la superficie se distingue
+                                        una capa de queratina (C), indicando adaptación a la fricción.
+                                        <br>
+                                        Por debajo del epitelio se encuentra la lámina propia, constituida por tejido
+                                        conectivo (TC), con abundantes células y fibras.
+                                        <br>
+                                        El tejido conectivo (TC) forma el eje de las papilas linguales, proporcionando
+                                        soporte al epitelio. Se observan núcleos de fibroblastos y matriz extracelular,
+                                        característicos de este tipo de tejido.
+                                    </p>
+
+
+                                </div>
+
+                                <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
-<div id="visor-toolbar" class="visor-toolbar">
+                                <div id="visor-toolbar" class="visor-toolbar">
 
-    <!-- IZQUIERDA: navegación básica -->
-    <div class="toolbar-left">
+                                    <!-- IZQUIERDA: navegación básica -->
+                                    <div class="toolbar-left">
 
-        <!-- Ir a imagen inicial -->
-        <button id="btn-home" class="btn-control">
-            <i class="bi bi-house"></i>
-        </button>
+                                        <!-- Ir a imagen inicial -->
+                                        <button id="btn-home" class="btn-control">
+                                            <i class="bi bi-house"></i>
+                                        </button>
 
-        <!-- Volver a la anterior (historial) -->
-        <button id="btn-back" class="btn-control">
-            <i class="bi bi-arrow-left"></i>
-        </button>
+                                        <!-- Volver a la anterior (historial) -->
+                                        <button id="btn-back" class="btn-control">
+                                            <i class="bi bi-arrow-left"></i>
+                                        </button>
 
-        <!-- Salir de pantalla completa -->
-        <button id="btn-exit" class="btn-control">
-            <i class="bi bi-x-circle"></i>
-        </button>
+                                        <!-- Salir de pantalla completa -->
+                                        <button id="btn-exit" class="btn-control">
+                                            <i class="bi bi-x-circle"></i>
+                                        </button>
 
-    </div>
+                                    </div>
 
-    <!-- CENTRO: controles del visor -->
-    <div class="toolbar-center">
+                                    <!-- CENTRO: controles del visor -->
+                                    <div class="toolbar-center">
 
-        <!-- Zoom out -->
-        <button id="zoom-out" class="btn-control">
-            <i class="bi bi-zoom-out"></i>
-        </button>
+                                        <!-- Zoom out -->
+                                        <button id="zoom-out" class="btn-control">
+                                            <i class="bi bi-zoom-out"></i>
+                                        </button>
 
-        <!-- Zoom in -->
-        <button id="zoom-in" class="btn-control">
-            <i class="bi bi-zoom-in"></i>
-        </button>
+                                        <!-- Zoom in -->
+                                        <button id="zoom-in" class="btn-control">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </button>
 
-        <!-- Ajustar imagen a pantalla -->
-        <button id="fit-btn" class="btn-control">
-            <i class="bi bi-aspect-ratio"></i>
-        </button>
+                                        <!-- Ajustar imagen a pantalla -->
+                                        <button id="fit-btn" class="btn-control">
+                                            <i class="bi bi-aspect-ratio"></i>
+                                        </button>
 
-        <!-- Activar/desactivar fullscreen -->
-        <button id="fullscreen-btn" class="btn-control">
-            <i class="bi bi-fullscreen"></i>
-        </button>
+                                        <!-- Activar/desactivar fullscreen -->
+                                        <button id="fullscreen-btn" class="btn-control">
+                                            <i class="bi bi-fullscreen"></i>
+                                        </button>
 
-        <!-- Mostrar/ocultar etiquetas -->
-        <button id="toggle-labels" class="btn-control">
-            <i class="bi bi-tag"></i>
-        </button>
+                                        <!-- Mostrar/ocultar etiquetas -->
+                                        <button id="toggle-labels" class="btn-control">
+                                            <i class="bi bi-tag"></i>
+                                        </button>
 
-        <!-- Mostrar/ocultar panel lateral -->
-        <button id="btn-panel" class="btn-control">
-            <i class="bi bi-layout-sidebar"></i>
-        </button>
-    </div>
-</div>
-   <!-- ==============================
+                                        <!-- Mostrar/ocultar panel lateral -->
+                                        <button id="btn-panel" class="btn-control">
+                                            <i class="bi bi-layout-sidebar"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- ==============================
     IMÁGENES
 ============================== -->
-<!-- Funciona como fuente de datos para JS (crearEstructura).
+                                <!-- Funciona como fuente de datos para JS (crearEstructura).
 -->
-<div style="display:none;">
+                                <div style="display:none;">
 
-    <!-- IMAGEN INICIAL (4X) -->
-    <!-- data-inicial="true" define la imagen que se carga al inicio -->
-    <button class="thumb-btn" 
-        data-level="4" 
-        data-id="lengua" 
-        data-src="../img/lengua/E14-O40_4X.jpg" 
-        data-inicial="true">
-    </button>
+                                    <!-- IMAGEN INICIAL (4X) -->
+                                    <!-- data-inicial="true" define la imagen que se carga al inicio -->
+                                    <button class="thumb-btn" data-level="4" data-id="lengua4x"
+                                        data-src="../img/lengua/E14-O40_4X.jpg" data-inicial="true">
+                                    </button>
 
-    <!-- IMAGEN 10X -->
-    <button class="thumb-btn" 
-        data-level="10" 
-        data-id="lengua10x" 
-        data-src="../img/lengua/E14-O40_10X.jpg">
-    </button>
+                                    <!-- IMAGEN 10X -->
+                                    <button class="thumb-btn" data-level="10" data-id="lengua10x"
+                                        data-src="../img/lengua/E14-O40_10X.jpg">
+                                    </button>
 
-    <!-- IMÁGENES 40X -->
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="lengua40x" 
-        data-src="../img/lengua/E14-O40_40X.jpg">
-    </button>
+                                    <!-- IMÁGENES 40X -->
+                                    <button class="thumb-btn" data-level="40" data-id="lengua40x"
+                                        data-src="../img/lengua/E14-O40_40X.jpg">
+                                    </button>
 
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="lengua40x3" 
-        data-src="../img/lengua/E14-O40_40X3.jpg">
-    </button>
+                                    <button class="thumb-btn" data-level="40" data-id="lengua40x3"
+                                        data-src="../img/lengua/E14-O40_40X3.jpg">
+                                    </button>
 
 
-</div>
-<!-- ==============================
+                                </div>
+                                <!-- ==============================
     ETIQUETAS
 ============================== -->
 
-    <!-- EJEMPLO (4X) -->
-    <!-- 
+                                <!-- EJEMPLO (4X) -->
+                                <!-- 
     data-level → nivel de imagen QUE PUEDE SER 4, 10 o 40
     data-id    → NOMBRE DE LA IMAGEN A LA QUE SE ASOCIA (data-id de los botones anteriores)
     data-x/y   → coordenadas
     data-label → texto mostrado EN LA ETIQUETA
     -->
-<div id="config-etiquetas" style="display:none;">
+                                <div id="config-etiquetas" style="display:none;">
 
-<!-- ETIQUETAS en 4x -->
-    <div class="etiqueta-link"
-data-level="4"
-data-id="lengua"
-data-x="0.4019"
-data-y="0.1956"
-data-label="P">
-</div>
+                                    <!-- ETIQUETAS en 4x -->
+                                    <div class="etiqueta-link" data-level="4" data-id="lengua4x" data-x="0.4019"
+                                        data-y="0.1956" data-label="P">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="lengua"
-data-x="0.3708"
-data-y="0.3263"
-data-label="M">
-</div>
+                                    <div class="etiqueta-link" data-level="4" data-id="lengua4x" data-x="0.3708"
+                                        data-y="0.3263" data-label="M">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="lengua"
-data-x="0.444"
-data-y="0.3484"
-data-label="s">
-</div>
+                                    <div class="etiqueta-link" data-level="4" data-id="lengua4x" data-x="0.444"
+                                        data-y="0.3484" data-label="s">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="4"
-data-id="lengua"
-data-x="0.7142"
-data-y="0.3436"
-data-label="MU">
-</div>
+                                    <div class="etiqueta-link" data-level="4" data-id="lengua4x" data-x="0.7142"
+                                        data-y="0.3436" data-label="MU">
+                                    </div>
 
-<!-- ETIQUETAS en 10X -->
-<div class="etiqueta-link"
-data-level="10"
-data-id="lengua10x"
-data-x="0.3223"
-data-y="0.1294"
-data-label="C">
-</div>
+                                    <!-- ETIQUETAS en 10X -->
+                                    <div class="etiqueta-link" data-level="10" data-id="lengua10x" data-x="0.3223"
+                                        data-y="0.1294" data-label="C">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="lengua10x"
-data-x="0.2849"
-data-y="0.2298"
-data-label="TC">
-</div>
+                                    <div class="etiqueta-link" data-level="10" data-id="lengua10x" data-x="0.2849"
+                                        data-y="0.2298" data-label="TC">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="lengua10x"
-data-x="0.4891"
-data-y="0.4179"
-data-label="LB">
-</div>
+                                    <div class="etiqueta-link" data-level="10" data-id="lengua10x" data-x="0.4891"
+                                        data-y="0.4179" data-label="LB">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="lengua10x"
-data-x="0.5363"
-data-y="0.1311"
-data-label="E">
-</div>
+                                    <div class="etiqueta-link" data-level="10" data-id="lengua10x" data-x="0.5363"
+                                        data-y="0.1311" data-label="E">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="10"
-data-id="lengua10x"
-data-x="0.6771"
-data-y="0.2767"
-data-label="L">
-</div>
+                                    <div class="etiqueta-link" data-level="10" data-id="lengua10x" data-x="0.6771"
+                                        data-y="0.2767" data-label="L">
+                                    </div>
 
-  <!-- ETIQUETAS en 40X -->
+                                    <!-- ETIQUETAS en 40X -->
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="lengua40x"
-data-x="0.2446"
-data-y="0.2716"
-data-label="C">
-</div>
+                                    <div class="etiqueta-link" data-level="40" data-id="lengua40x" data-x="0.2446"
+                                        data-y="0.2716" data-label="C">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="lengua40x"
-data-x="0.4334"
-data-y="0.0651"
-data-label="E">
-</div>
+                                    <div class="etiqueta-link" data-level="40" data-id="lengua40x" data-x="0.4334"
+                                        data-y="0.0651" data-label="E">
+                                    </div>
 
-<div class="etiqueta-link"
-data-level="40"
-data-id="lengua40x"
-data-x="0.4696"
-data-y="0.3364"
-data-label="TC">
-</div>
+                                    <div class="etiqueta-link" data-level="40" data-id="lengua40x" data-x="0.4696"
+                                        data-y="0.3364" data-label="TC">
+                                    </div>
 
- <!-- ==============================
+                                    <!-- ==============================
     CUADRANTES (ENLACES ENTRE NIVELES)
 ============================== -->
-<!-- 
+                                    <!-- 
 Bloque que define áreas clicables.
 Permiten navegar entre imágenes (niveles 4, 10, 40).
 -->
-<div id="config-cuadrantes" style="display:none;">
-      <!-- EJEMPLO: de 4X → 10X -->
-    <!-- 
+                                    <div id="config-cuadrantes" style="display:none;">
+                                        <!-- EJEMPLO: de 4X → 10X -->
+                                        <!-- 
     data-parent       → nivel actual= (4, 10 o 40)
     data-parent-id    → imagen origen (data-id de los botones anteriores)
     data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
@@ -324,64 +284,49 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     data-x/y          → posición (inicio)
     data-w/h          → tamaño (ancho/alto)
     data-label        → texto mostrado en hover = 4X, 10X o 40X
-    --> 
-<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
-    <div data-parent="4"
-data-parent-id="lengua"
-data-target="lengua10x"
-data-target-level="10"
-data-label="10X"
-data-x="0.279"
-data-y="0.1353"
-data-w="0.2992"
-data-h="0.1591">
-</div>
+    -->
+                                        <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+                                        <div data-parent="4" data-parent-id="lengua4x" data-target="lengua10x"
+                                            data-target-level="10" data-label="10X" data-x="0.279" data-y="0.1353"
+                                            data-w="0.2992" data-h="0.1591">
+                                        </div>
 
-<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
- 
-    <!--<div data-parent="10"
-data-parent-id="lengua"
-data-target="lengua10x"
-data-target-level="lengua40x"
-data-label="40"
-data-x="0.3429"
-data-y="0.163"
-data-w="0.0939"
-data-h="0.0613">
-</div>-->
+                                        <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
 
-<div data-parent="10"
-data-parent-id="lengua10x"
-data-target="lengua40x"
-data-target-level="40"
-data-label="40X"
-data-x="0.2229"
-data-y="0.1196"
-data-w="0.2343"
-data-h="0.1402">
-</div>
+                                        <div data-parent="10" data-parent-id="lengua10x" data-target="lengua40x"
+                                            data-target-level="40" data-label="40X" data-x="0.3429" data-y="0.163"
+                                            data-w="0.0939" data-h="0.0613">
+                                        </div>
+
+                                        <div data-parent="10" data-parent-id="lengua10x" data-target="lengua40x"
+                                            data-target-level="40" data-label="40X" data-x="0.2229" data-y="0.1196"
+                                            data-w="0.2343" data-h="0.1402">
+                                        </div>
 
 
-    <!-- ==============================
+                                        <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
-<!-- Se carga contenido común (footer) mediante JS -->
-<div id="footer-container"></div>
+                                        <!-- Se carga contenido común (footer) mediante JS -->
+                                        <div id="footer-container"></div>
 
-<!-- ==============================
+                                        <!-- ==============================
      SCRIPTS
 ============================== -->
 
-<!-- Plantilla: carga header/footer dinámicos -->
-<script src="../../../../js/plantilla.js"></script>
+                                        <!-- Plantilla: carga header/footer dinámicos -->
+                                        <script src="../../../../js/plantilla.js"></script>
 
-<!-- Bootstrap JS (componentes interactivos) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                                        <!-- Bootstrap JS (componentes interactivos) -->
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- OpenSeadragon (motor del visor) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+                                        <!-- OpenSeadragon (motor del visor) -->
+                                        <script
+                                            src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 
-<!-- Script principal PARA EL VISOR DE IMÁGENES -->
-<script type="module" src="../../../../js/main.js"></script>
+                                        <!-- Script principal PARA EL VISOR DE IMÁGENES -->
+                                        <script type="module" src="../../../../js/main.js"></script>
 </body>
+
 </html>
