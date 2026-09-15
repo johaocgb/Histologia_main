@@ -33,7 +33,7 @@
     <div class="container-fluid container-pag">
 
         <div class="text-center my-4">
-            <h2 class="fw-bold text-primary">PWAGLERI - Sistema Digestivo - Pancreas </h2>
+            <h2 class="fw-bold text-primary">PWAGLERI - Sistema Digestivo - Pancreas</h2>
         </div>
 
         <div class="row">
@@ -59,37 +59,34 @@
                                 <div class="pagina active" data-level="4" data-id="pancreas4x">
                                     <p><strong>AUMENTO 4X:</strong></p>
                                     <p>
-                                        El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos
-                                        en la luz y la pared del vaso conformado por:
+                                        AGREGAR INFORMACION
                                     </p>
-                                    <ul>
+                                    <!-- <ul>
                                         <li><strong>TI:</strong> Túnica íntima</li>
                                         <li><strong>TM:</strong> Túnica media</li>
                                         <li><strong>TA:</strong> Túnica adventicia</li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
 
                                 <!-- = PÁGINA 10X -->
-                                <div class="pagina" data-level="10" data-id="pancreas10x">
+                                <div class="pagina" data-level="10" data-id="pancreas10X">
                                     <p><strong>AUMENTO 10X:</strong></p>
                                     <p>
-                                        <strong>Túnica íntima:</strong>
-                                        (E) Endotelio, (TC) tejido conectivo subendotelial y (ME) lámina elástica.
+                                        AGREGAR INFORMACION
                                     </p>
                                 </div>
-                                <!-- = PÁGINA 40X -->
-                                <div class="pagina" data-level="40" data-id="pancreas40x">
-                                    <p><strong>AUMENTO 40X:</strong></p>
-                                    <p>
-                                        <strong>Túnica íntima:</strong>
-                                        (E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno,
-                                        proteoglicanos y glucoproteínas.
-                                        <br>
-                                        Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
-                                    </p>
 
+                                <!-- = PÁGINA 40X -->
+
+                                <div class="pagina" data-level="40" data-id="pancreas10X2">
+                                    <p><strong>AUMENTO 10X:</strong></p>
+                                    <p>
+                                        AGREGAR INFORMACION
+                                    </p>
                                 </div>
+
                             </div>
+
                             <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
@@ -163,14 +160,16 @@
                                 </button>
 
                                 <!-- IMAGEN 10X -->
-                                <button class="thumb-btn" data-level="10" data-id="pancreas10X"
+                                <button class="thumb-btn" data-level="10" data-id="pancreas10x"
                                     data-src="img/pancreas/foco1/pancreas10x.jpg">
                                 </button>
 
+
                                 <!-- IMÁGENES 40X -->
-                                <button class="thumb-btn" data-level="40" data-id="pancreas40X"
-                                    data-src="img/pancreas/foco1/pancreas40x.jpg">
+                                <button class="thumb-btn" data-level="10" data-id="pancreas10X2"
+                                    data-src="img/pancreas/foco1/pancreas10X2.jpg">
                                 </button>
+
 
 
                             </div>
@@ -186,6 +185,18 @@
     data-label → texto mostrado EN LA ETIQUETA
     -->
                             <div id="config-etiquetas" style="display:none;">
+
+
+
+                                <!-- ETIQUETAS en 10X -->
+
+
+                                <!-- ETIQUETAS en 40X3 -->
+
+
+
+                                <!-- ETIQUETAS en 40X2 -->
+
 
 
 
@@ -209,21 +220,21 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     -->
                                     <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
 
-
                                     <div data-parent="4" data-parent-id="pancreas4x" data-target="pancreas10x"
-                                        data-target-level="10" data-label="10X" data-x="0.2919" data-y="0.0944"
-                                        data-w="0.2475" data-h="0.1285">
+                                        data-target-level="10" data-label="10X" data-x="0.2918" data-y="0.1031"
+                                        data-w="0.2439" data-h="0.1205">
                                     </div>
 
-                                    <div data-parent="10" data-parent-id="estomago10X" data-target="estomago40X"
-                                        data-target-level="40" data-label="40X" data-x="0.4724" data-y="-0.0005"
-                                        data-w="0.5019" data-h="0.2052">
+                                    <div data-parent="4" data-parent-id="pancreas4x" data-target="pancreas10X2"
+                                        data-target-level="10" data-label="10X2" data-x="0.8023" data-y="0.3482"
+                                        data-w="0.1921" data-h="0.1363">
                                     </div>
 
-                                    <div data-parent="40" data-parent-id="estomago40X" data-target="estomago40X2"
-                                        data-target-level="40" data-label="40X2" data-x="0.066" data-y="0.0202"
-                                        data-w="0.6085" data-h="0.3914">
-                                    </div>
+
+                                    <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+
+
+
                                     <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
