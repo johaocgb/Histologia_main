@@ -1,43 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histología</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">	
-    <link rel="stylesheet" href="../../../css/styleSis.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/estiloGeneral.css">
+    <link rel="stylesheet" href="../../../css/estiloHome.css">
 </head>
+
 <body>
+    <div id="header-container"></div>
 
 
     <div class="container-pag">
+
         <h3 class="title">Sistema Endocrino</h3>
 
-          <div class="parrafo-container">
-            <p class="parrafo">
-         El sistema endocrino es el conjunto de glándulas y órganos que producen hormonas, las cuales regulan funciones vitales como el crecimiento,
-          la reproducción, el metabolismo y el equilibrio interno del organismo.
+        <!-- DESCRIPCIÓN -->
+        <div class="sistema-intro">
+
+            <p>
+                El sistema endocrino está formado por glándulas y órganos
+                encargados de producir hormonas que regulan funciones
+                esenciales del organismo, como el metabolismo,
+                el crecimiento y la reproducción.
+                Su estudio histológico permite identificar
+                las estructuras de estas glándulas
+                y comprender su actividad secretora.
             </p>
+
+            <p>
+                Explora las muestras disponibles para observar
+                 sus estructuras a diferentes aumentos.
+            </p>
+
         </div>
 
-        <div class="row" style="justify-content: center;">
-            <div class="col-2">
-                                <a href="./glandulaAdrenal.html" class="btn btn-primary btn-lg shadow">
-                    <i class="bi bi-arrow-right-circle"></i> Glandula Adrenal
+        <!-- MUESTRAS DISPONIBLES -->
+
+        <div class="gallery-grid organos-gallery">
+
+            <!-- GLÁNDULA ADRENAL -->
+            <div class="animal-card">
+
+                <a href="./glandulaAdrenal.html">
+                    <img src="./images/AHE13011-4X.jpeg" class="img-a" alt="Muestra histológica de glándula adrenal">
                 </a>
 
+                <div class="animal-btn">
+                    <a href="./glandulaAdrenal.html" class="text-a btn btn-primary">
+
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Glándula adrenal
+
+                    </a>
+                </div>
+
             </div>
+
         </div>
 
-
-      
     </div>
-       <!-- FOOTER -->
+    <!-- FOOTER -->
     <div id="footer-container"></div>
 
     <!-- SCRIPTS -->
     <script src="../../../js/plantilla.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
