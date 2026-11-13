@@ -1,79 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histología</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">	
-     <link rel="stylesheet" href="../../../css/estiloGeneral.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/estiloGeneral.css">
     <link rel="stylesheet" href="../../../css/estiloHome.css">
-   
+
 </head>
+
 <body>
- 
+
     <div id="header-container"></div>
 
-    <div class="container-pag">
-        <h3 class="title">Sistema Linfohematopoyetico</h3>
 
-          <div class="parrafo-container">
-            <p class="parrafo">
-          Introducción
+    <div class="container-pag">
+
+        <!-- TÍTULO -->
+        <h3 class="title">Sistema Linfohematopoyético</h3>
+
+        <!-- INTRODUCCIÓN -->
+        <div class="sistema-intro">
+            <p>
+                El sistema linfohematopoyético está formado por
+                órganos y tejidos que participan en la producción,
+                maduración y funcionamiento de las células sanguíneas
+                y del sistema inmunitario.
+            </p>
+
+            <p>
+                Entre sus estructuras se encuentran el bazo y los
+                ganglios linfáticos, encargados de funciones relacionadas
+                con la defensa del organismo y la filtración de la
+                sangre y la linfa.
+            </p>
+
+            <p>
+                Su estudio histológico permite identificar la
+                organización de estos tejidos y comprender su
+                participación en la respuesta inmunitaria.
+            </p>
+
+            <p>
+                Explora las muestras disponibles para observar
+                sus estructuras a diferentes aumentos.
             </p>
         </div>
 
-        <div class="row" style="justify-content: center;">
-            <div class="col-2">
-                <h3 class="title">Bazo</h3>
+        <!-- BAZO -->
+        <h3 class="title">Bazo</h3>
 
-            </div>
-            <div class="col-2">
-                    <h3 class="title">Ganglio Linfatico</h3>
+        <div class="gallery-grid organos-gallery">
+
+            <!-- CÁPSULA -->
+            <div class="animal-card">
+
+                <a href="./bazo/capsula.html">
+                    <img src="./bazo/images/capsula/capsula4x.jpg" class="img-a"
+                        alt="Muestra histológica de la cápsula del bazo">
                 </a>
 
+                <div class="animal-btn">
+                    <a href="./bazo/capsula.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Cápsula
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- PULPA BLANCA -->
+            <div class="animal-card">
+                <a href="./bazo/pulpa_blanca.html">
+                    <img src="./bazo/images/pulpa_blanca/blanca4x.jpg" class="img-a"
+                        alt="Muestra histológica de pulpa blanca">
+                </a>
+
+                <div class="animal-btn">
+                    <a href="./bazo/pulpa_blanca.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Pulpa Blanca
+                    </a>
+                </div>
+            </div>
+
+            <!-- PULPA ROJA -->
+            <div class="animal-card">
+                <a href="./bazo/pulpa_roja.html">
+                    <img src="./bazo/images/pulpa_roja/roja4x.jpg" class="img-a"
+                        alt="Muestra histológica de pulpa roja">
+                </a>
+
+                <div class="animal-btn">
+                    <a href="./bazo/pulpa_roja.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Pulpa Roja
+                    </a>
+                </div>
+            </div>
+
+            <!-- TRABÉCULA -->
+            <div class="animal-card">
+                <a href="./bazo/trabecula.html">
+                    <img src="./bazo/images/trabecula/trabecula4x.jpg" class="img-a"
+                        alt="Muestra histológica de trabécula del bazo">
+                </a>
+
+                <div class="animal-btn">
+                    <a href="./bazo/trabecula.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Trabécula
+                    </a>
+                </div>
             </div>
         </div>
-        
-        <div class="row" style="justify-content: center; ">
-            <div class="col-2">
-                <a href="./bazo/capsula.html" class="btn btn-primary btn-md shadow mb-2">
-                    <i class="bi bi-arrow-right-circle"></i> Capsula
-                </a>
-                <a href="./bazo/pulpa_blanca.html" class="btn btn-primary btn-md shadow mb-2">
-                        <i class="bi bi-arrow-right-circle"></i> Pulpa Blanca
-                </a>
-                <a href="./bazo/pulpa_roja.html" class="btn btn-primary btn-md shadow mb-2">
-                    <i class="bi bi-arrow-right-circle"></i> Pulpa Roja
-                </a>
-                <a href="./bazo/trabecula.html" class="btn btn-primary btn-md shadow">
-                    <i class="bi bi-arrow-right-circle"></i> Trabecula
+
+        <!-- GANGLIO LINFÁTICO -->
+        <h3 class="title">Ganglio Linfático</h3>
+
+        <div class="gallery-grid organos-gallery">
+
+            <!-- CÁPSULA -->
+            <div class="animal-card">
+                <a href="./ganglio_lin/capsula.html">
+                    <img src="./ganglio_lin/images/capsula/capsula4x.jpg" class="img-a"
+                        alt="Muestra histológica de cápsula del ganglio linfático">
                 </a>
 
+                <div class="animal-btn">
+                    <a href="./ganglio_lin/capsula.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Cápsula
+                    </a>
+                </div>
             </div>
-            <div class="col-2">
-                <a href="./ganglio_lin/capsula.html" class="btn btn-primary btn-md shadow mb-2">
-                    <i class="bi bi-arrow-right-circle"></i> Capsula
-                </a>
-                <a href="./ganglio_lin/foliculo.html" class="btn btn-primary btn-md shadow mb-2">
-                    <i class="bi bi-arrow-right-circle"></i> Foliculo
-                </a>
-                <a href="./ganglio_lin/paracortical.html" class="btn btn-primary btn-md shadow mb-2">
-                    <i class="bi bi-arrow-right-circle"></i> Paracortical
+
+            <!-- FOLÍCULO -->
+            <div class="animal-card">
+                <a href="./ganglio_lin/foliculo.html">
+                    <img src="./ganglio_lin/images/foliculo/foliculo4x.jpg" class="img-a"
+                        alt="Muestra histológica del folículo del ganglio linfático">
                 </a>
 
+                <div class="animal-btn">
+                    <a href="./ganglio_lin/foliculo.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Folículo
+                    </a>
+                </div>
             </div>
+
+            <!-- PARACORTICAL -->
+            <div class="animal-card">
+                <a href="./ganglio_lin/paracortical.html">
+                    <img src="./ganglio_lin/images/paracortical/paracortical4x.jpg" class="img-a"
+                        alt="Muestra histológica de la región paracortical del ganglio linfático">
+                </a>
+
+                <div class="animal-btn">
+                    <a href="./ganglio_lin/paracortical.html" class="text-a btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i>
+                        Paracortical
+                    </a>
+                </div>
+            </div>
+
         </div>
-
-
 
     </div>
 
 
-
-    </div>
-        <div id="footer-container"></div>
+    <div id="footer-container"></div>
     <script src="../../../js/plantilla.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
