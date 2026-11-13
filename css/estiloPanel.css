@@ -3,27 +3,27 @@
    Define estructura en dos columnas (visor + panel)
 ====================================================== */
 
-.page-layout{
-  display:grid;
-  grid-template-columns:70% 30%;
-  gap:20px;
-  width:100%;
-  align-items:stretch;
-  min-height:calc(100vh - 130px);
-  padding:40px 20px;
-  box-sizing:border-box;
+.page-layout {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
+  width: 100%;
+  align-items: stretch;
+  min-height: calc(100vh - 130px);
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 /* Columnas base reutilizables */
 
 .left-column,
-.right-column{
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  padding:20px 25px 40px 25px;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 25px 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -32,40 +32,40 @@
    Contiene el texto explicativo
 ====================================================== */
 
-.right-column{
-  background:rgba(255,255,255,0.9);
-  height:520px;
-  overflow:hidden;
+.right-column {
+  background: rgba(255, 255, 255, 0.9);
+  height: 520px;
+  overflow: hidden;
 }
 
 /* Área scroll del texto */
 
-.text-content-area{
-  flex-grow:1;
-  overflow-y:auto;
-  scrollbar-width:thin;
-  margin-bottom:15px;
+.text-content-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  margin-bottom: 15px;
 }
 
 /* Scroll personalizado */
 
-.text-content-area::-webkit-scrollbar{
-  width:8px;
+.text-content-area::-webkit-scrollbar {
+  width: 8px;
 }
 
-.text-content-area::-webkit-scrollbar-thumb{
-  background-color:#999;
-  border-radius:4px;
+.text-content-area::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
 }
 
 /* Tipografía */
 
-.right-column h3{
-  text-align:center;
+.right-column h3 {
+  text-align: center;
 }
 
-.right-column p{
-  text-align:justify;
+.right-column p {
+  text-align: justify;
 }
 
 
@@ -73,25 +73,25 @@
    PAGINACIÓN (contenido por páginas)
 ====================================================== */
 
-.pagination{
-  display:flex;
-  justify-content:center;
-  margin-top:15px;
-  gap:8px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 8px;
 }
 
-.page-btn{
-  background-color:#e9ecef;
-  border:none;
-  border-radius:6px;
-  padding:6px 12px;
-  font-weight:600;
-  cursor:pointer;
+.page-btn {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.page-btn.active{
-  background-color:#0d6efd;
-  color:white;
+.page-btn.active {
+  background-color: #0d6efd;
+  color: white;
 }
 
 
@@ -99,154 +99,154 @@
    PANEL LATERAL DE DESCRIPCIÓN (DENTRO DEL VISOR)
 ====================================================== */
 
-#panel-descripcion{
-  width:340px;
-  height:100%;
-  background:#ffffff;
+#panel-descripcion {
+  width: 340px;
+  height: 100%;
+  background: #ffffff;
 
-  overflow-y:auto;
-  border-left:1px solid #e5e7eb;
+  overflow-y: auto;
+  border-left: 1px solid #e5e7eb;
 
-  padding:28px 24px;
-  box-sizing:border-box;
-  transition:width .3s ease;
+  padding: 28px 24px;
+  box-sizing: border-box;
+  transition: width .3s ease;
 
-  box-shadow:-3px 0 10px rgba(0,0,0,0.04);
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.04);
 }
 
 /* ============================
    TÍTULO 
 ============================ */
 
-#panel-descripcion .title{
-  margin-bottom:20px;
+#panel-descripcion .title {
+  margin-bottom: 20px;
 
-  font-weight:700;
-  font-size:18px;
+  font-weight: 700;
+  font-size: 18px;
 
-  text-align:center; 
-  color:#1f2937;
+  text-align: center;
+  color: #1f2937;
 
-  letter-spacing:0.5px;
-  border-bottom:1px solid #e5e7eb;
-  padding-bottom:10px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
 }
 
 /* ============================
    TEXTO DESPCRIPCION
 ============================ */
 
-#panel-descripcion p{
-  line-height:1.7;
-  margin-bottom:16px;
+#panel-descripcion p {
+  line-height: 1.7;
+  margin-bottom: 16px;
 
-  text-align:justify;
+  text-align: justify;
 
-  color:#4b5563;
-  font-size:14.5px;
+  color: #4b5563;
+  font-size: 14.5px;
 
-  letter-spacing:0.2px;
+  letter-spacing: 0.2px;
 }
 
 /* ======================================================
    PANEL LATERAL DE DESCRIPCIÓN
 ====================================================== */
 
-#panel-descripcion{
-  width:340px;
-  height:100%;
+#panel-descripcion {
+  width: 340px;
+  height: 100%;
 
   /*  FONDO GENERAL PANEL  */
-  background:#f1f5f9;
+  background: #f1f5f9;
 
-  overflow-y:auto;
-  border-left:1px solid #afb5bd;
+  overflow-y: auto;
+  border-left: 1px solid #afb5bd;
 
-  padding:30px 26px;
-  box-sizing:border-box;
-  transition:width .3s ease;
+  padding: 30px 26px;
+  box-sizing: border-box;
+  transition: width .3s ease;
 
   /* sombra suave */
-  box-shadow:-4px 0 12px rgba(0,0,0,0.06);
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.06);
 }
 
 /* ============================
    TÍTULO 
 ============================ */
 
-#panel-descripcion .title{
-  margin-bottom:20px;
+#panel-descripcion .title {
+  margin-bottom: 20px;
 
-  font-weight:700;
-  font-size:22px; 
+  font-weight: 700;
+  font-size: 22px;
 
-  text-align:center;
-  color:#1e3658;
+  text-align: center;
+  color: #1e3658;
 
-  letter-spacing:0.5px;
+  letter-spacing: 0.5px;
 }
 
 /* ============================
    TEXTO 
 ============================ */
 
-#panel-descripcion p{
-  line-height:1.8; 
-  margin-bottom:18px;
+#panel-descripcion p {
+  line-height: 1.8;
+  margin-bottom: 18px;
 
-  text-align:justify;
+  text-align: justify;
 
-  color:#374151;
+  color: #374151;
 
-  font-size:18px; 
+  font-size: 18px;
 
-  letter-spacing:0.3px;
+  letter-spacing: 0.3px;
 }
 
 /* ============================
    TARJETA INTERNA (VISIBLE)
 ============================ */
 
-#panel-descripcion .pagina{
-  display:none;
+#panel-descripcion .pagina {
+  display: none;
 
-  background:#ffffff; 
-  padding:18px;
-  border-radius:12px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
 
-  border:1px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
 
 
-  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-#panel-descripcion .pagina.active{
-  display:block;
+#panel-descripcion .pagina.active {
+  display: block;
 }
 
 /* ============================
    SCROLL MODERNO
 ============================ */
 
-#panel-descripcion::-webkit-scrollbar{
-  width:6px;
+#panel-descripcion::-webkit-scrollbar {
+  width: 6px;
 }
 
-#panel-descripcion::-webkit-scrollbar-thumb{
-  background:#1d2c4b;
-  border-radius:4px;
+#panel-descripcion::-webkit-scrollbar-thumb {
+  background: #1d2c4b;
+  border-radius: 4px;
 }
 
 /* ============================
    PANEL OCULTO
 ============================ */
 
-#viewer.panel-hidden #panel-descripcion{
-  width:0;
-  padding:0;
-  border:none;
-  box-shadow:none;
-  overflow:hidden;
+#viewer.panel-hidden #panel-descripcion {
+  width: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
 }
 
 
@@ -254,24 +254,64 @@
    CONTENEDOR GENERAL DE LA PÁGINA
 ====================================================== */
 
-.container-pag{
-  min-height:calc(100vh - 160px);
-  padding-bottom:40px;
+.container-pag {
+  min-height: calc(100vh - 160px);
+  padding-bottom: 40px;
 }
+
+/* =============================================
+  PAGINADOR DE FOCOS 
+============================================== */
+.paginador-focos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px 8px;
+  margin-bottom: 12px;
+}
+
+.foco-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #0d6efd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #0d6efd;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.foco-btn:hover {
+  background-color: #e7f1ff;
+  color: #0a58ca;
+}
+
+.foco-btn.activo {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
 
 
 /* ======================================================
    RESPONSIVE
 ====================================================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-  .page-layout{
-    grid-template-columns:1fr;
+  .page-layout {
+    grid-template-columns: 1fr;
   }
 
-  .right-column{
-    height:auto;
+  .right-column {
+    height: auto;
   }
 
 }

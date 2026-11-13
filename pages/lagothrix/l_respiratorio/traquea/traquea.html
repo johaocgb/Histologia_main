@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histología - Glandula Salival Mucosa</title>
+    <title>Histología - Tráquea Foco 1</title>
     <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
@@ -27,6 +27,13 @@
 
     <!-- Header dinámico (cargado por JS) -->
     <div id="header-container"></div>
+
+    <div class="container-fluid mt-3 px-4">
+        <a href="../l_respiratorio.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left-circle"></i>
+            Volver
+        </a>
+    </div>
     <!-- ==============================
      CONTENEDOR PRINCIPAL
 ============================== -->
@@ -51,7 +58,13 @@
 
                         <div id="panel-descripcion">
 
-                            <h3 class="title">Tráquea</h3>
+                            <div class="paginador-focos">
+                                <a href="./traquea.html" class="foco-btn activo">1</a>
+                                <a href="./traquea2.html" class="foco-btn">2</a>
+                                <a href="./traquea3.html" class="foco-btn">3</a>
+                            </div>
+
+                            <h3 class="title">Tráquea Foco 1</h3>
 
                             <div class="text-content-area">
 
@@ -275,30 +288,38 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
                                         data-w="0.2046" data-h="0.1132">
                                     </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                    <!-- ==============================
+
+
+    <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
-                                    <!-- Se carga contenido común (footer) mediante JS -->
-                                    <div id="footer-container"></div>
+    <!-- Se carga contenido común (footer) mediante JS -->
+    <div id="footer-container"></div>
 
-                                    <!-- ==============================
+    <!-- ==============================
      SCRIPTS
 ============================== -->
 
-                                    <!-- Plantilla: carga header/footer dinámicos -->
-                                    <script src="../../../../js/plantilla.js"></script>
+    <!-- Plantilla: carga header/footer dinámicos -->
+    <script src="../../../../js/plantilla.js"></script>
 
-                                    <!-- Bootstrap JS (componentes interactivos) -->
-                                    <script
-                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS (componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                                    <!-- OpenSeadragon (motor del visor) -->
-                                    <script
-                                        src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <!-- OpenSeadragon (motor del visor) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 
-                                    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
-                                    <script type="module" src="../../../../js/main.js"></script>
+    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
+    <script type="module" src="../../../../js/main.js"></script>
 </body>
 
 </html>
