@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histología - Glandula Salival Mucosa</title>
+    <title>Histología - Vena Foco 1</title>
     <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
@@ -27,6 +27,13 @@
 
     <!-- Header dinámico (cargado por JS) -->
     <div id="header-container"></div>
+
+    <div class="container-fluid mt-3 px-4">
+        <a href="../l_cardiovascular.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left-circle"></i> Volver
+        </a>
+    </div>
+
     <!-- ==============================
      CONTENEDOR PRINCIPAL
 ============================== -->
@@ -51,6 +58,11 @@
 
                         <div id="panel-descripcion">
 
+                            <div class="paginador-focos">
+                                <a href="./vena.html" class="foco-btn activo">1</a>
+                                <a href="./vena2.html" class="foco-btn">2</a>
+                            </div>
+
                             <h3 class="title">Vena</h3>
 
                             <div class="text-content-area">
@@ -61,7 +73,7 @@
                                     <p>
                                         AGREGAR INFORMACION
                                     </p>
-                                        <!-- <ul>
+                                    <!-- <ul>
                                             <li><strong>TI:</strong> Túnica íntima</li>
                                             <li><strong>TM:</strong> Túnica media</li>
                                             <li><strong>TA:</strong> Túnica adventicia</li>
@@ -162,8 +174,8 @@
 
                                 <!-- IMAGEN INICIAL (4X) -->
                                 <!-- data-inicial="true" define la imagen que se carga al inicio -->
-                                <button class="thumb-btn" data-level="4" data-id="vena4x" data-src="../img/vena/foco1/4X.jpg"
-                                    data-inicial="true">
+                                <button class="thumb-btn" data-level="4" data-id="vena4x"
+                                    data-src="../img/vena/foco1/4X.jpg" data-inicial="true">
                                 </button>
 
                                 <!-- IMAGEN 10X -->
@@ -218,46 +230,55 @@ Permiten navegar entre imágenes (niveles 4, 10, 40).
     data-label        → texto mostrado en hover = 4X, 10X o 40X
     -->
                                     <!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
-                                    <div data-parent="4" data-parent-id="vena4x" data-target="vena10x" data-target-level="10"
-                                        data-label="10X" data-x="0.2533" data-y="0.2164" data-w="0.4312"
-                                        data-h="0.2298">
+                                    <div data-parent="4" data-parent-id="vena4x" data-target="vena10x"
+                                        data-target-level="10" data-label="10X" data-x="0.2533" data-y="0.2164"
+                                        data-w="0.4312" data-h="0.2298">
                                     </div>
 
                                     <!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
-                                    <div data-parent="10" data-parent-id="vena10x" data-target="vena40x" data-target-level="40"
-                                        data-label="40X" data-x="0.3004" data-y="0.3753" data-w="0.2671"
-                                        data-h="0.1281">
+                                    <div data-parent="10" data-parent-id="vena10x" data-target="vena40x"
+                                        data-target-level="40" data-label="40X" data-x="0.3004" data-y="0.3753"
+                                        data-w="0.2671" data-h="0.1281">
                                     </div>
 
-                                    <div data-parent="10" data-parent-id="vena10x" data-target="vena40x2" data-target-level="40"
-                                        data-label="40X2" data-x="0.5762" data-y="0.4045" data-w="0.1547"
-                                        data-h="0.0783">
+                                    <div data-parent="10" data-parent-id="vena10x" data-target="vena40x2"
+                                        data-target-level="40" data-label="40X2" data-x="0.5762" data-y="0.4045"
+                                        data-w="0.1547" data-h="0.0783">
                                     </div>
 
 
-                                    <!-- ==============================
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
-                                    <!-- Se carga contenido común (footer) mediante JS -->
-                                    <div id="footer-container"></div>
+    <!-- Se carga contenido común (footer) mediante JS -->
+    <div id="footer-container"></div>
 
-                                    <!-- ==============================
+    <!-- ==============================
      SCRIPTS
 ============================== -->
 
-                                    <!-- Plantilla: carga header/footer dinámicos -->
-                                    <script src="../../../../js/plantilla.js"></script>
+    <!-- Plantilla: carga header/footer dinámicos -->
+    <script src="../../../../js/plantilla.js"></script>
 
-                                    <!-- Bootstrap JS (componentes interactivos) -->
-                                    <script
-                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS (componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                                    <!-- OpenSeadragon (motor del visor) -->
-                                    <script
-                                        src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <!-- OpenSeadragon (motor del visor) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
 
-                                    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
-                                    <script type="module" src="../../../../js/main.js"></script>
+    <!-- Script principal PARA EL VISOR DE IMÁGENES -->
+    <script type="module" src="../../../../js/main.js"></script>
 </body>
 
 </html>
